@@ -1,0 +1,760 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{preamble}
+
+\title{A Brickwall Model for de Sitter Black Holes}
+\author{José Manuel Begines Sánchez}
+
+\begin{document}
+
+\input{00-titlepage.tex}
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}\label{label1}
+
+Along with Quantum Mechanics, General Relativity (GR) has been one of the most notorious advances in Fundamental Physics of all time. It is a framework that, after being tested over and over again, has proven to be a very robust theory to explain the macroscopic universe we live in, from predicting how a celestial body will move through space-time, to even explaining how our universe developed into its current state. However, as the reader maybe be familiar with, there are still some problems to be solved within the predictions of GR. The most noticeable one is the fact GR predicts singular spacetimes, i.e. spacetimes with infinite curvature at certain points known as singularities, like black holes (BHs).
+
+The appearance of these singularities are usually confronted saying that GR is a classical theory, and that in places like the center of a BH the energy density is so high that Quantum Mechanics needs to be taken into account. Here is where one faces the first problem: up until today, we do not have a unique consistent Quantum Theory of Gravity that can explain our universe.
+
+Through the years, there has been semi-classical approaches to help us extract quantum properties from BHs. In 1972, Jacob Bekenstein, based on the works of Demetrios Christodoulou and Stephen Hawking who proved that the area of a BH event horizon could not shrink but to grow or (in a few particular cases) remain the same \cite{Hawking:1971tu,Christodoulou:1971pcn}, proposed that we could associate an entropy to a BH proportional\footnote{Today we know that this proportionality factor must be 1/4 to maintain self consistency with the first law of thermodynamics} to this area:
+
+\begin{equation}\LA{SBH}
+    S_{BH}\propto \frac{k_B}{l_P^2}A ~~~~:~~~~ l_P=\left(\frac{\hbar G}{c^3}\right)^{1/2}
+\end{equation}
+
+Where $l_P$ is known as Planck's constant expressed in terms of the fundamental constants $G$,$\hbar$ and $c$; and $k_B$ is Boltzmann's constant. 
+
+From this idea, later on, Stephen Hawking \cite{Hawking:1975vcx} proved that BHs must emit a faint radiation\footnote{So faint that up until today we do not have sufficiently high detecting ability to sense it} with the spectrum of a black body whose temperature is derived from equation (\ref{SBH}). For example, in the case of the Schwarzschild BH:
+
+\begin{equation}
+	T = \left(\frac{\partial U}{\partial S}\right)_V = \frac{4l_P^2c^2}{k_B}\frac{dM}{dA} = \frac{l_P^2c^6}{8\pi k_BG^2M} = \frac{\hbar c^3}{8\pi k_B GM}
+\end{equation}
+
+This radiation would make the BH lose energy and ultimately evaporate. Indeed, this process has led to one of the biggest recent puzzles in theoretical physics: the information loss paradox \cite{Hawking:1976ra}. In a few words, matter in a pure state may be thrown into a BH, but only thermal radiation comes out. This would imply however, that a pure state has evolved into a mixed state, which would violate unitarity. This has lead physicists nowadays to think that well established principles, as unitarity or even locality, may be abandoned.
+
+Also, by that time, John Wheeler had already postulated, one the most important theorems in BHs physics, No-Hair Theorem.
+
+\begin{boxedminipage}{0.9\textwidth}
+    \textbf{No-hair Theorem: }
+    
+    All stationary BH solutions of the Einstein-Maxwell equations of gravitation and electromagnetism in general relativity can be completely characterized by only three independent externally observable classical parameters: mass, angular momentum, and electric charge.
+\end{boxedminipage}
+
+Taking all of these considerations into account, it is quite straight forward then to consider a BH as a macroscopic thermodynamic system with its few macroscopic degrees of freedom. However this still leave us with quite a few questions. First of all we have the fact that entropy as we know it is an extensive property, but if this is the case, then why is it proportional to the area of the event horizon, rather than the volume it encloses? What's more, one must also deal with the statistical mechanics part of thermodynamics. That is, entropy is a measure of the volume of the phase space of a system constrained by macroscopic properties, the more microscopic configurations are compatible with the macroscopic properties the more entropy our system will have. However, as we already mentioned, BHs are uniquely fixed by their macroscopic properties, i.e, their phase space is zero dimensional. If this is the case, then, what could we understand as this microstates whose ensemble average gives us the BH macrostate?
+
+The first question has been considered a hint for a fundamental and general property of quantum gravity theories, first proposed by Gerard't Hooft and later promoted by Leonard Susskind by 1994 \cite{Susskind_1995}, the holographic principle.
+
+\begin{boxedminipage}{0.9\textwidth}
+    \textbf{Holographic Principle: }
+    
+    Quantum Gravitational Theories must be holographic. That is, any (d+1)-dimensional gravitational theory should have a description in terms of d-dimensional quantum field theory without gravity.
+\end{boxedminipage}
+
+This statement has found realization with the AdS/CFT correspondence, conjectured by Juan Maldacena in 1997 \cite{Maldacena_1999}, which although not being proved yet, has worked like a charm in every tested example.
+
+\begin{boxedminipage}{0.9\textwidth}
+    \textbf{AdS/CFT Correspondence Conjecture: }
+    
+    A (d+1)-dimensional anti-de Sitter spacetime can be described in terms of a d-dimensional conformal field theory.
+\end{boxedminipage}
+
+Even though the AdS/CFT correspondence, as I already pointed out, has proven to work quite well, it most likely cannot be applied in our universe to obtain a description of quantum gravity whatsoever, as most astronomical observations points towards our universe being de Sitter. This encompass a whole new problem on its own, since there is still no consensus in what kind of theory is dual to de-Sitter spacetimes or how this duality manifest itself (See \cite{Galante:2023uyf} for a recent review on de-Sitter holography). Finding it would entail an enormous boost in the field of Quantum Gravity.
+
+Now, we still have to discuss the second question we mentioned. What are these BH microstates? From string theory, there exists one major candidate: Fuzzballs. 
+
+This \textquotedblleft Fuzzball proposal\textquotedblright~ states there exists $e^{S}$ horizon-free, non-singular solutions, known as Fuzzballs, which globally look like the BH, but differ from it up to the horizon-scale, i.e, the interior of the BH gets replaced by something different. The BH would come out as the average of an ensemble of these Fuzzballs. The singularity and the event horizon would come up as a by product of considering the classical limit in the average process.
+
+This proposal can be very appealing, because if this were the case, it would solve information paradox. If there is no horizon, there is no information loss. Matter would get inside and at some point it would escape. Information would dilute, there's no doubt of that, but would still be there.
+
+In the context of everything we have discussed so far, one can argue that BHs must be fast scramblers, i.e. they dilute the information they get very fast\footnote{It would happen in time $t\sim \log d$ where d is the dimension of the Hilbert Space we would be dealing with \cite{Sekino_2008}}. This fast scrambling is a characteristic property of Quantum Chaos and Random Matrix Theory (RMT) (See Section \ref{PRELIM})
+
+One then, would like to see if this Fuzzballs reproduce this RMT-like behaviour. However, testing this kind of behaviour has proven to be very challenging \cite{Das_2023}. That's what has lead different authors \cite{Das_2023,Jeong_2025,das2023fuzzballsrandommatrices,das2023brickwallrotatingbtzdiprampplateau,das2025brickwalladsschwarzschildblack} to consider a \textquotedblleft Fuzzball Toy model\textquotedblright, a Brickwall model to be more precise, that could serve as a way to detect some hint of RMT behaviour. And, indeed this has been the case, the normal modes of scalar and fermionic fields has shown evidence of Quantum Chaotic features by different probes: level-repulsion, the dip-ramp-plateau structure of the Spectral Form Factor and the Krylov Complexity of these states.
+
+This master thesis aims to used the techniques developed and the considerations taken into account in the mentioned studies performed over AdS spacetimes, and apply them on dS spacetimes to try to enhance our understanding of the quantum aspects of cosmological and black hole spacetimes and hopefully shed a bit of more light on the holographic nature of de Sitter space.
+
+{\noindent\color{red} Once everything is finished, I will write here a brief summary of what I discuss in each part.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Preliminaries}\LA{PRELIM}
+\subsection{Asymptotically de Sitter spacetimes}
+\subsection{Diagnostics of quantum chaos}
+
+From the classical point of view, although no universally accepted mathematical definition of Chaos exists, we have an intuitive senses of what it means. In a few words, a chaotic system is that "very sensitive to initial conditions". Indeed, chaos is a broadly interdisciplinary area of scientific study which most notably has been used in the field of Statistical Mechanics to study the process of thermalization of macroscopic systems.
+
+Considering this one could may well be in interested in studying the concept of chaos in quantum systems. However, it was clear since the early days of quantum mechanics that the classical notion of chaos could not be directly applied to quantum systems for different reasons. First of all, as Schrödinger's equation is linear, it cannot have exponentially departing trajectories for wave functions (the overlap between two different quantum states that evolve with the same Hamiltonian will not vary). Additionally, although one can use quantum mechanic formulations based on the phases-space, "trajectories" do not exist in quantum mechanics and consequently you cannot specify the phase-space initial conditions as position and momenta cannot be specified simultaneously. This then brings up the question of what is the analogue of chaotic motion in quantum systems.
+
+\subsubsection{Level spacing distributions and spectral form factor}
+
+\subsubsection{Krylov complexity for states}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{de Sitter Black holes in Brickwall models}\LA{deSitter_BH}
+
+It was Gerard 't Hooft, who first introduced the Brickwall model \cite{tHooft:1984kcu}, as an elementary exercise to arrive at the entropy of a black hole following an statistical mechanics perspective. As we already discussed in the introduction, GR \textquotedblleft breaks\textquotedblright~  at the event horizon of a BH as well as at the cosmological horizon of dS spacetimes, which means that we cannot predict how a field that propagates within those spacetimes works at those exact points. However, nothing prevents us from getting arbitrarily close to this horizon.
+
+Considering this, one could define a \textquotedblleft stretched horizon \textquotedblright and impose a Dirichlet boundary condition in said horizon. The distance between the actual horizon and this stretched one, would work as an UV cut-off of the theory. Normally, when one works with event and cosmological horizons, incoming-wave boundary conditions are considered, i.e, waves just enters and does not come out of this horizons. In this context, one could only obtain quasi-normal modes that decay with time. However, in our Brickwall model, certain configurations of boundary conditions make the obtention of normal modes possible as we will see in the following subsections.
+
+\subsection{Normal mode of probe scalar fields}
+
+During this work, we will only consider scalar fields in favor of simplicity, however, similar results are expected for other types of fields. For example \cite{Jeong_2025} also considers fermionic fields within the BTZ case and results are completely analogous.
+
+\subsubsection{A warm-up: three-dimensional AdS black holes}
+
+Firstly, let's review what \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices} already calculated and analyzed, the normal modes of the scalar field over the BTZ metric, an asymptotically $AdS_{2+1}$ black hole. This metric takes the following form\footnote{I am considering the AdS length and the event horizon radius equal to one} in the usual polar coordinates:
+
+\begin{equation}\LA{BTZ_METRIC}
+    \dd s^2_{BTZ} = -f(r)\dd t^2 + \frac{\dd r^2}{f(r)} + r^2 \dd\varphi^2
+\end{equation}
+
+{\noindent With:}
+
+\begin{equation}
+    f(r) = r^2 - 1 ~~~~~:~~~~~ 1 < r < \infty
+\end{equation}
+
+{\noindent and $\varphi$ periodic in 2\pi}
+
+However, we can simplify our future calculations if we consider the following change of coordinates:
+
+\begin{equation}
+    r = \sqrt{\frac{1}{1-z}} ~~~~~:~~~~~ \dd r^2 = \frac{\dd z^2}{4(1-z)^3} ~~~~~:~~~~~ 0 < z < 1,
+\end{equation}
+
+{\noindent that makes the metric (\ref{BTZ_METRIC}) take this new form:}
+
+\begin{equation}
+    \dd s^2_{BTZ} = -\frac{z}{1-z}\dd t^2 + \frac{\dd z^2 }{4z(1-z)^2} + \frac{\dd\varphi^2}{1-z}
+\end{equation}
+
+{\noindent In this new coordinate system the event horizon $r\rightarrow 1$ is located in $z\rightarrow 0$.}
+
+From this metric now, we can try to solve the Klein-Gordon equation:
+
+\begin{equation}\LA{KLEIN_GORDON}
+    \nabla_\mu\nabla^\mu \Psi =\frac{1}{\sqrt{\abs{g}}}\del_\mu\left(\sqrt{\abs{g}}\del^\mu\Psi\right)= m^2\Psi
+\end{equation}
+
+{\noindent To do so, we can consider the following ansatz: }
+
+\begin{equation}
+    \Psi(z,\phi,t) = \Phi(z)e^{-i\omega t}e^{iJ\varphi},
+\end{equation}
+
+{\noindent i.e, make a Fourier expansion in time and angular variable, where we know that $J\in\mathds{Z}$ because each solution must be periodic in $2\pi$. If we now insert this in equation (\ref{KLEIN_GORDON}) considering only the massless case for simplicity \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices}, we obtain:}
+
+\begin{equation}
+    \Phi''(z) + \frac{\Phi'(z)}{z} + \frac{J^2z^2+\w-z(J^2+\w^2)}{4z^2(1-z)^2}\Phi=0,
+\end{equation}
+
+which, gladly, has analytical solutions. Indeed, these solution can be expressed in terms of the hypergeometric functions $\hypr$ (see Appendix \ref{HYPR}) as:
+
+\begin{equation}\LA{SOL_BTZ}
+    \begin{aligned}
+        \Phi(z) = & \calc_1 e^{\frac{\pi\w}{2}} z^{-\frac{i\w}{2}}\hypr\left(\frac{i(J-\w)}{2};-\frac{i(J+\w)}{2};1-i\w;z\right) \\
+    + & \calc_2 e^{-\frac{\pi\w}{2}} z^{\frac{i\w}{2}}\hypr\left(-\frac{i(J-\w)}{2};\frac{i(J+\w)}{2};1+i\w;z\right)
+\end{aligned}
+\end{equation}
+
+We can now consider these solutions around the $AdS$ boundary $z\rightarrow 1$, where the solution takes the form:
+
+\begin{equation}
+    \Phi_{bdry}(z) = \calc_1\frac{e^{\frac{i\w}{2}}\Gamma[1-i\w]}{\Gamma\left[1+\frac{i}{2}(J-\w)\right]\Gamma\left[1-\frac{i}{2}(J+\w)\right]} + \calc_2\frac{e^{-\frac{i\w}{2}}\Gamma[1-i\w]}{\Gamma\left[1-\frac{i}{2}(J-\w)\right]\Gamma\left[1+\frac{i}{2}(J+\w)\right]}
+\end{equation}
+
+{\noindent And, if we consider the normalizability condition, as in \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices}, $\Phi(1)=0$, it leads us to the following relation between the integration constants:}
+
+\begin{equation}
+    \calc_2 = -\calc_1\frac{e^{i\w}\Gamma\left[1-\frac{i}{2}(J-\w)\right]\Gamma\left[1+\frac{i}{2}(J+\w)\right]\Gamma[1-i\w]}{\Gamma\left[1+\frac{i}{2}(J-\w)\right]\Gamma\left[1-\frac{i}{2}(J+\w)\right]\Gamma[1+i\w]}
+\end{equation}
+
+Once we have specified this, we can consider our \textit{Brickwall} boundary condition. That is, we consider a \textit{stretched} horizon $z_0$ arbitrarily close to the event horizon ($z=1^+$) and impose a general Dirichlet boundary condition there. In this case:
+
+\begin{equation}\LA{BOUNDARY_BTZ}
+    \Phi_{hor}(z_0)\approx \calc_1 e^{\frac{\pi\w}{2}}\left(P_1 z_0^{-\frac{i\w}{2}}+Q_1 z_0^{\frac{i\w}{2}}\right) = {\Phi_0}_J,
+\end{equation}
+
+{\noindent where we have used the same naming condition as in \cite{Jeong_2025}:}
+
+\begin{equation}
+    P_1 = 1 ~~~~~~ ; ~~~~~~ Q_1 = - \frac{\Gamma\left[1-\frac{i}{2}(J-\w)\right]\Gamma\left[1+\frac{i}{2}(J+\w)\right]\Gamma[1-i\w]}{\Gamma\left[1+\frac{i}{2}(J-\w)\right]\Gamma\left[1-\frac{i}{2}(J+\w)\right]\Gamma[1+i\w]}
+\end{equation}
+
+{\noindent and where can check (see Appendix \ref{HYPR}) that $\left|Q_1\right|=1$
+
+Moreover we can parametrize the boundary condition as in \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices}:
+
+\begin{equation}
+    {\Phi_0}_J = \mu_J e^{i\lambda_J\omega}
+\end{equation}
+
+It's important to highlight some things in these parametrization, extensively explained in \cite{das2023fuzzballsrandommatrices}. In the following considerations, we will obtain a quantization condition for the \textit{energy} eigenstates with an explicit $J$ dependence and $n$ dependence coming from the fact that the quantization condition is periodic. It is important to note then, that our \textit{Brickwall} boundary condition is specified a priori so it will only depend in a priori variables of our considerations, i.e $J$. It is true, however, that with our current parametrization $\lambda_J$ depends on $n$ because we wanted to include $\w$ in the phase of the boundary condition to ease our following calculations\footnote{As the reader must be now thinking, it is true that in this case then the notation should be $\lambda_{J,n}$, but we will not do so to maintain homogeneity with previous work}. However, if we were to reparametrize our boundary condition following $\lambda_J \rightarrow \lambda_J/\w$ then, $\lambda_j$ and $\mu_J$ would only depend on J.
+
+If we now rearrange equation (\ref{BOUNDARY_BTZ}), we can write:
+
+\begin{equation}\LA{QUANTIZATION_BTZ}
+    e^{i\theta_Q} = \mu_J e^{i\left(\lambda_J\w + \frac{\theta}{2}\right)} - e^{i\theta}
+\end{equation}
+
+{\noindent where we have considered:}
+
+\begin{equation}
+    \theta = \Arg\left[z_0^{i\omega}\right] ~~~~~~;~~~~~~\theta_Q = -\Arg\left[Q_1\right] ~~~~~~;~~~~~~ \calc_1Q_1e^{\frac{\pi\w}{2}}=1
+\end{equation}
+
+From this relation we can extract two different considerations. The first one comes from equating the modulus of the two sides of the equation:
+
+\begin{equation}\LA{MODULUS_BTZ}
+    \mu_J = 2\cos\left(\lambda_J\w - \frac{\theta}{2}\right)
+\end{equation}
+
+{\noindent And the second one comes from equating the phases of both sides:}
+\begin{equation}
+    \left.\begin{aligned}
+        \cos{\theta_Q} &= \cos{\left(2\lambda_J\w\right)}\\
+        \sin{\theta_Q} &= \sin{\left(2\lambda_J\w\right)}
+    \end{aligned}\right\}\Longrightarrow \theta_Q = 2\lambda_J\omega +2\pi n ~~~~:~~~~ n\in\mathds{Z}
+\end{equation}
+
+In the end then, we just need to specify the values of $\lambda_J$ and $\mu_J$ and solve the quantization condition. Following \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices} we are going to extract the values of $\lambda_J$ from a Gaussian distribution, and fix its mean value so that $\mu_J=2$. This can be accomplished, considering equation (\ref{MODULUS_BTZ}), if we fix:
+
+\begin{equation}
+    \langle\lambda_J\rangle = \half\log z_0
+\end{equation}
+
+{\noindent Additionally, again as in \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices} the $\lambda_J$-variance is going to be of the form $\sigma = \sigma_o/\sqrt{J}$. Taking this into account, we can obtain the normal modes that we have plotted in Figure \ref{NORMAL_BTZ}, where we have considered two extreme examples $\sigma_0=0$ and $\sigma_0=2$}.
+
+\begin{figure}
+    \centering
+    \subcaptionbox{$\sigma_0=0$}
+    {
+        \begin{tikzpicture}
+            \begin{axis}[
+                width=0.44\textwidth,
+                height=5.5cm,
+                mark size=1pt,
+                ytick={0.00015708,0.00015710,0.00015712,0.00015714,0.00015716,0.00015718},
+                y tick label style= {
+                    /pgf/number format/.cd,
+                    fixed,
+                    fixed zerofill,
+                    precision=4,
+                    /tikz/.cd},
+                xlabel=J,
+                xmin=-20,
+                xmax=410,
+                ylabel=$\w$,
+                y label style = {rotate = -90},
+                ymin=0.00015707,
+                ymax=0.00015718
+                ]
+                \addplot+ [only marks] table
+                {etc/data/BTZ_SIGMA0.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \subcaptionbox{$\sigma_0=2$}
+    {
+        \begin{tikzpicture}
+            \begin{axis}[
+                width=0.44\textwidth,
+                height=5.5cm,
+                mark size=1pt,
+                ytick={0.00015708,0.00015710,0.00015712,0.00015714,0.00015716,0.00015718},
+                y tick label style= {
+                    /pgf/number format/.cd,
+                    fixed,
+                    fixed zerofill,
+                    precision=4,
+                    /tikz/.cd},
+                xlabel=J,
+                xmin=-20,
+                xmax=410,
+                ylabel=$\w$,
+                y label style = {rotate = -90},
+                ymin=0.00015707,
+                ymax=0.00015718
+                ]
+                \addplot+ [only marks] table
+                {etc/data/BTZ_SIGMA2.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \caption{Normal Modes of a massless scalar field over the BTZ spacetime with the normalization condition $\Phi(0)=0$ and the Brickwall boundary condition $\Phi(z_0)=\mu_Je^{i\lambda_J\omega}$, where we extract the values of $\lambda_J$ from a Gaussian distribution with mean value $\langle\lambda_J\rangle=\half\log{z_0}\approx 10^{-4}$ and a variance $\sigma=\sigma_0/\sqrt{J}$}\LA{NORMAL_BTZ}
+\end{figure}
+
+\subsubsection{Empty dS spacetime}
+
+Considering what we reviewed in the previous subsection about the already performed calculation of the normal modes of a scalar field over the BTZ black hole, it is quite straightforward to use the same considerations to obtain the normal modes of scalar fields over the de Sitter static patch\footnote{Mostly because as its metric can be obtained applying a spacetime isomorphism to the BTZ metric} \cite{Anninos_2012} .
+
+The metric of the $dS_{d+1}$ static patch\footnote{I am considering the dS length and the cosmological horizon radius equal to one} in the usual spherical coorinates takes the following form:
+
+\begin{equation}
+    \dd s^2_{d+1} = -h(r)\dd t^2 + \frac{\dd r^2}{h(r)}+r^2\dd\Omega_{d-1}^2
+\end{equation}
+
+{\noindent With:}
+
+\begin{equation}
+    h(r) = 1 - r^2 ~~~~~:~~~~~ 0 < r < 1
+\end{equation}
+
+{\noindent and $\dd\Omega^2_{d-1}$ the usual metric of the unit $(d-1)$-sphere.}
+
+From this metric now, we will also try to solve equation (\ref{KLEIN_GORDON}), considering the following ansatz:
+
+\begin{equation}
+    \Psi(r,\Omega,t) = \Phi(r)e^{-i\w t}Y(\Omega),
+\end{equation}
+
+{\noindent i.e, make a Fourier expansion in energy and an expansion in (d-1)-dimensional spherical harmonics of the angular part (See Appendix \ref{HYPR}). If we now insert this in equation (\ref{KLEIN_GORDON}), again only considering the massless case, we obtain:}
+
+\begin{equation}
+    \begin{aligned}
+        \inv{r^{d-1}}\frac{\dd}{\dd r}\left(hr^{d-1}\frac{\dd\Phi}{\dd r}\right) +\left[\frac{l(l+d-2)}{r^2}-\frac{\w^2}{h}\right]\Phi &= 0,\\
+        \left(r^2-1\right)\Phi''+\left[\frac{1-d}{r}+r(1+d)\right]\Phi'+\left[\frac{l(l+d-2)}{r^2}-\frac{\w^2}{1-r^2}\right]\Phi &= 0,
+    \end{aligned}
+\end{equation}
+
+{\noindent which again has an analytical solution in terms of hypergeometric functions $\hypr$:}
+
+\begin{equation}\LA{SOL_STATIC}
+    \begin{aligned}
+        \Phi(r) = \calc_1(1-r^2)^{-i\w/2}r^l&\hypr\left[\half\left(l-i\w\right),\half\left(d+l-i\w\right),\frac{d}{2}+l,r^2\right) \\
+        + \calc_2(1-r^2)^{-i\w/2}r^{2-d-l}&\hypr\left(1-\half\left(l+i\w\right),1-\half\left(d+l+i\w\right),2-\frac{d}{2}-l,r^2\right)
+    \end{aligned}
+\end{equation}
+
+Now, we can consider these solutions around the origin $r\rightarrow0$, and impose that this solution needs to be regular at that point:
+
+\begin{equation}
+    \Phi_{bdry}(r) = \calc_1 r^l\left[1+\frac{l(d+l)-\w^2}{2(d+2l)}r^2 + O(r^3)\right] + \calc_2r^{-d-l}\left[r^2+O(r^3)\right],
+\end{equation}
+
+{\noindent which then leads to imposing:}
+
+\begin{equation}
+    \calc_2 = 0.
+\end{equation}
+
+{\noindent That is, the whole second solution is non-regular at the origin.}
+
+Again, once we have specified this, we can apply the Brickwall boundary condition. In this case, we will consider a stretched horizon $r_0$ arbitrarily close to the cosmological horizon ($r=1^-$) and impose a general Dirichlet boundary condition there. Note that we will use a pretty similar notation to the one in the previous section:
+
+\begin{equation}
+    \Phi(r_0)\approx\pi \csch\left(\pi\w\right)\Gamma\left(\frac{d}{2}+l\right) \frac{\calc_1}{\w}\left\{P_2(2-2r_0)^{-\frac{i\w}{2}}+Q_2(2-2r_0)^{\frac{i\w}{2}}\right\}= {\Phi_0}_l,
+\end{equation}
+
+{\noindent with:}
+
+\begin{equation}\LA{STATIC_BOUNDARY}
+    \begin{gathered}
+        P_2 =\frac{1}{\Gamma\left[\frac{l+i\w}{2}\right]\Gamma\left[\frac{d+l+i\w}{2}\right]\Gamma\left[-i\omega\right]}\\
+        Q_2=\frac{1}{\Gamma\left[\frac{l-i\w}{2}\right]\Gamma\left[\frac{d+l-i\w}{2}\right]\Gamma\left[i\omega\right]} 
+    \end{gathered}
+\end{equation}
+
+{\noindent and where we can check (see Appendix \ref{HYPR}) that $\abs{Q_2}=\abs{P_2}$. }
+
+Lastly, using a similar parametrization to the one on the previous subsection we can rearrange equation (\ref{STATIC_BOUNDARY}) and write:
+
+\begin{equation}
+    e^{i(\theta_P-\theta_Q)} = \mu_l e^{i\left(\lambda_l\w + \frac{\theta}{2}\right)}-e^{i\theta},
+\end{equation}
+
+{\noindent with:}
+
+\begin{equation}
+    \begin{gathered}
+        \theta=\Arg\left[(2-2r_0)^{i\w}\right] ~~~~~~;~~~~~~ \theta_Q=\Arg\left[Q_2\right] ~~~~~~;~~~~~~ \theta_P=\Arg\left[P_2\right]\\
+        \pi \csch\left(\pi\w\right)\Gamma\left(\frac{d}{2}+l\right) \frac{\calc_1Q_2}{\w} = 1
+    \end{gathered}
+\end{equation}
+
+This relation, analogously to what we discussed about equation \ref{QUANTIZATION_BTZ}, can be translated into:
+
+\begin{equation}
+    \begin{gathered}
+        \mu_l = 2\cos\left(\lambda_l\w - \frac{\theta}{2}\right)\\
+        \left.\begin{aligned}
+            \cos{\theta_P-\theta_Q} &= \cos{\left(2\lambda_l\w\right)}\\
+            \sin{\theta_P-\theta_Q} &= \sin{\left(2\lambda_l\w\right)}
+        \end{aligned}\right\}\Longrightarrow \theta_Q = 2\lambda_l\omega +2\pi n ~~~~:~~~~ n\in\mathds{Z}
+    \end{gathered}
+\end{equation}
+
+{\noindent So we can just do the same procedure, fixing the mean value to $\langle\lambda_l\rangle = \half\log\left(2-2r_0\right)$ and the $\lambda_l$-variance to $\sigma=\sigma_0/\sqrt{l}$. Taking, then, this into account, we can obtain the normal modes plotted in Figure \ref{NORMAL_STATIC}, where we have considered $d=3$.}
+
+\begin{figure}
+    \centering
+    \subcaptionbox{$\sigma_0=0$}
+    {
+        \begin{tikzpicture}
+            \begin{axis}[
+                width=0.44\textwidth,
+                height=5.5cm,
+                mark size=1pt,
+                ytick={0.00015708,0.00015710,0.00015712,0.00015714,0.00015716,0.00015718},
+                y tick label style= {
+                    /pgf/number format/.cd,
+                    fixed,
+                    fixed zerofill,
+                    precision=4,
+                    /tikz/.cd},
+                xlabel=l,
+                xmin=-20,
+                xmax=410,
+                ylabel=$\w$,
+                y label style = {rotate = -90},
+                ymin=0.00015707,
+                ymax=0.00015718
+                ]
+                \addplot+ [only marks] table
+                {etc/data/STATIC_SIGMA0.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \subcaptionbox{$\sigma_0=2$}
+    {
+        \begin{tikzpicture}
+            \begin{axis}[
+                width=0.44\textwidth,
+                height=5.5cm,
+                mark size=1pt,
+                ytick={0.00015708,0.00015710,0.00015712,0.00015714,0.00015716,0.00015718},
+                y tick label style= {
+                    /pgf/number format/.cd,
+                    fixed,
+                    fixed zerofill,
+                    precision=4,
+                    /tikz/.cd},
+                xlabel=l,
+                xmin=-20,
+                xmax=410,
+                ylabel=$\w$,
+                y label style = {rotate = -90},
+                ymin=0.00015707,
+                ymax=0.00015718
+                ]
+                \addplot+ [only marks] table
+                {etc/data/STATIC_SIGMA2.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \caption{Normal Modes of a massless scalar field over the static patch of the $dS_{3+1}$ spacetime with the normalization condition $\Phi(0)=0$ and the Brickwall boundary condition $\Phi(r_0)=\mu_le^{i\lambda_l\omega}$, where we extract the values of $\lambda_l$ from a Gaussian distribution with mean value $\langle\lambda_l\rangle=\half\log\left(2-2r_0\right)\approx 10^{-4}$ and a variance $\sigma=\sigma_0/\sqrt{l}$}\LA{NORMAL_STATIC}
+\end{figure}
+
+
+%%
+%%}{\Gamma\left[\frac{l+i\w}{2}\right]\Gamma\left[\frac{d+l+i\w}{2}\right]\Gamma\left[-i\omega\right]}
+
+\subsubsection{Schwarzschild-dS black hole}
+\subsection{Quantum chaos signatures with stretched \textit{cosmological} horizons}
+\subsubsection{Level spacing distribution and spectral form factor}
+\begin{figure}[ht]
+    \centering
+    \subcaptionbox{$\sigma_0=0$ (Delta-like)\vspace*{.25cm}}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, black!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM0.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \hspace{2cm}
+    \subcaptionbox{$\sigma_0=0.017$ (GSE)}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, red!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM0017.dat};
+                \addplot [
+                    black,
+                    sharp plot,
+                    line width =1]
+                table {etc/data/GSE.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \subcaptionbox{$\sigma_0=0.024$ (GUE)\vspace*{.25cm}}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, blue!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM0024.dat};
+                \addplot [
+                    black,
+                    sharp plot,
+                    line width =1]
+                table {etc/data/GUE.dat}; 
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \hspace{2cm}
+    \subcaptionbox{$\sigma_0=0.030$ (GOE)}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth, xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, green!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM0030.dat};
+                \addplot [
+                    black,
+                    sharp plot,
+                    line width =1]
+                table {etc/data/GOE.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \subcaptionbox{$\sigma_0=0.5$ (POISSON)}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, gray!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM05.dat};
+                \addplot [
+                    black,
+                    sharp plot,
+                    line width =1]
+                table {etc/data/POISSON.dat};
+            \end{axis}
+        \end{tikzpicture}
+    }
+    \caption{Level spacing distributions of the normal modes. The solid lines are given by their respective analytic distribution}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \subcaptionbox{$\sigma_0=0.017$\vspace*{.25cm}}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{loglogaxis}[
+                width=0.45\textwidth,
+                height=0.45*7/10*\textwidth,
+                xtick pos=bottom,
+                xmin=7e6,
+                xmax=2e13,
+                ytick pos=left,
+                xlabel=t,
+                ylabel=SFF(t)]
+                \addplot+ [draw=red, mark=none]
+                table {etc/data/SFF_STATIC_SIGMA0017.dat};
+            \end{loglogaxis}
+        \end{tikzpicture}
+    }
+    \hspace{2cm}
+    \subcaptionbox{$\sigma_0=0.024$}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{loglogaxis}[
+                width=0.45\textwidth,
+                height=0.45*7/10*\textwidth,
+                xtick pos=bottom,
+                xmin=7e6,
+                xmax=2e13,
+                ytick pos=left,
+                xlabel=t,
+                ylabel=SFF(t)]
+                \addplot+ [draw=blue, mark=none]
+                table {etc/data/SFF_STATIC_SIGMA0024.dat};
+            \end{loglogaxis}
+        \end{tikzpicture}
+    } 
+    \subcaptionbox{$\sigma_0=0.030$}
+    {
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{loglogaxis}[
+                width=0.45\textwidth,
+                height=0.45*7/10*\textwidth,
+                xtick pos=bottom,
+                xmin=7e6,
+                xmax=2e13,
+                ytick pos=left,
+                xlabel=t,
+                ylabel=SFF(t)]
+                \addplot+ [draw=green, mark=none]
+                table {etc/data/SFF_STATIC_SIGMA0030.dat};
+            \end{loglogaxis}
+        \end{tikzpicture}
+    }
+    \hspace{2cm}
+    \subcaptionbox{$\sigma_0=0.5$}
+    { 
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{loglogaxis}[
+                width=0.45\textwidth,
+                height=0.45*7/10*\textwidth,
+                xtick pos=bottom,
+                xmin=7e6,
+                xmax=2e13,
+                ytick pos=left,
+                xlabel=t,
+                ylabel=SFF(t)]
+                \addplot+ [draw=black, mark=none]
+                table {etc/data/SFF_STATIC_SIGMA05.dat};
+            \end{loglogaxis}
+        \end{tikzpicture}
+    } 
+    \caption{Spectral Form Factor of the scalar fields considering a disorder-average}
+\end{figure}
+
+\subsubsection{Krylov complexity}
+
+\begin{figure}[ht]
+    \centering
+        \begin{tikzpicture}
+            \begin{axis}[width=0.8\textwidth,height=0.8*7/10*\textwidth,
+                ymin=0,
+                xmin=0,
+                xmax=4e11,
+                xlabel=t,
+                ylabel=C(t)/d,
+                y label style = {rotate = -90},
+                scaled ticks = false,
+                xtick={0, 1e11, 2e11, 3e11, 4e11},
+                minor x tick num = 8,
+                minor y tick num = 8]
+                \addplot+ [black!70!white,line width=2,mark=none]
+                table {etc/data/KRYLOV_STATIC0.dat};
+                \addplot+ [red!70!white,line width=2,mark=none]
+                table {etc/data/KRYLOV_STATIC0017.dat};
+                \addplot+ [blue!70!white,line width=2,mark=none]
+                table {etc/data/KRYLOV_STATIC0024.dat};
+                \addplot+ [green!70!white,line width=2,mark=none]
+                table {etc/data/KRYLOV_STATIC0030.dat};
+                \addplot+ [gray!70!white,line width=2,mark=none]
+                table {etc/data/KRYLOV_STATIC05.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Krylov complexity of the normal modes when $\sigma=0,~ 0.017,~ 0.024,~ 0.030,~ 0.5$ (black, red, blue, green, black)}
+\end{figure}
+
+\subsection{On stretched \textit{black hole} horizons in dS black holes}
+\subsubsection{WKB approximation method}
+\subsubsection{Perturbative method}
+\subsubsection{Results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions}\label{label4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\appendix
+
+\section{Mathematical Considerations}\LA{HYPR}
+
+\subsection{Hypergeometric Function}
+
+The solutions to scalar field normal modes in equations (\ref{SOL_BTZ}), (\ref{SOL_STATIC}) are written in terms of the hypergeometric function $\hypr(a,b;c;z)$ which is defined as:
+
+\begin{equation}
+    \hypr(a,b;c;z) = \sum^{\infty}_{n=0} \frac{(a)_n(b)_n}{(c)_n}\frac{z^n}{n!} ~~~~~~:~~~~~~ \abs{z} < 1
+\end{equation}
+
+{\noindent in terms of the Pochhammer symbol $(x)_n$, defined by: }
+
+\begin{equation}
+    (x)_n=\left\{
+        \begin{aligned}
+            &1 &n=0 \\
+            &x(x+1)...(x+n-1) ~~~~ &n>0
+        \end{aligned}
+        \right.
+\end{equation}
+
+\subsection{Modulus of \texorpdfstring{$Q_1$}{TEXT}, \texorpdfstring{$P_2$}{TEXT} and \texorpdfstring{$Q_2$}{TEXT}}
+
+During Section \ref{deSitter_BH} we define the quantities:
+
+\begin{equation}
+    \begin{aligned}
+        Q_1 &= - \frac{\Gamma\left[1-\frac{i}{2}(J-\w)\right]\Gamma\left[1+\frac{i}{2}(J+\w)\right]\Gamma[1-i\w]}{\Gamma\left[1+\frac{i}{2}(J-\w)\right]\Gamma\left[1-\frac{i}{2}(J+\w)\right]\Gamma[1+i\w]}\\
+        P_2 &=\frac{1}{\Gamma\left[\frac{l+i\w}{2}\right]\Gamma\left[\frac{d+l+i\w}{2}\right]\Gamma\left[-i\omega\right]} \\
+        Q_2 &=\frac{1}{\Gamma\left[\frac{l-i\w}{2}\right]\Gamma\left[\frac{d+l-i\w}{2}\right]\Gamma\left[i\omega\right]} 
+    \end{aligned}
+\end{equation}
+
+{\noindent It is easy to prove that:}
+
+\begin{equation}\LA{MODULUS}
+    \abs{Q_1} = 1 ~~~~~~;~~~~~~ \abs{P_2} = \abs{Q_2}
+\end{equation}
+
+{\noindent To do so, we just need to take into account the fact that:}
+
+\begin{equation}
+    \Gamma(\overline{z})=\overline{\Gamma(z)},
+\end{equation}
+
+{\noindent which implies that:}
+
+\begin{equation}
+    \abs{\Gamma(\overline{z})} = \abs{\overline{\Gamma(z)}} = \abs{\Gamma(z)}
+\end{equation}
+
+{\noindent directly proving equation (\ref{MODULUS})}
+
+\newpage
+
+\printbibliography
+
+\end{document}
+
+
+

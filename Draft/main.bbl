@@ -1,0 +1,661 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Hawking:1971tu}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2be8e4f9a1eec9e94013d9d674ce8962}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{fullhash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{fullhashraw}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{bibnamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorbibnamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authornamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorfullhash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorfullhashraw}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{{Gravitational radiation from colliding black holes}}
+      \field{volume}{26}
+      \field{year}{1971}
+      \field{pages}{1344\bibrangedash 1346}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.26.1344
+      \endverb
+    \endentry
+    \entry{Christodoulou:1971pcn}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d34e5e605000c4fa0275b0a2838ae652}{%
+           family={Christodoulou},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=698df3edcac45267ee2bb47478e4cd7f}{%
+           family={Ruffini},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{fullhash}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{fullhashraw}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{bibnamehash}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{authorbibnamehash}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{authornamehash}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{authorfullhash}{1b76d8f857cd9a099a5f154025bc47ae}
+      \strng{authorfullhashraw}{1b76d8f857cd9a099a5f154025bc47ae}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{{Reversible transformations of a charged black hole}}
+      \field{volume}{4}
+      \field{year}{1971}
+      \field{pages}{3552\bibrangedash 3555}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.4.3552
+      \endverb
+    \endentry
+    \entry{Hawking:1975vcx}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2be8e4f9a1eec9e94013d9d674ce8962}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=f124a6c6353beba14ca70eeea60274d8}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={G.\bibnamedelimi W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2be8e4f9a1eec9e94013d9d674ce8962}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{fullhash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{fullhashraw}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{bibnamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorbibnamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authornamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorfullhash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorfullhashraw}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{editorbibnamehash}{7cba4875c23870b072dc91ad1eeb3c2c}
+      \strng{editornamehash}{7cba4875c23870b072dc91ad1eeb3c2c}
+      \strng{editorfullhash}{7cba4875c23870b072dc91ad1eeb3c2c}
+      \strng{editorfullhashraw}{7cba4875c23870b072dc91ad1eeb3c2c}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Commun. Math. Phys.}
+      \field{note}{[Erratum: Commun.Math.Phys. 46, 206 (1976)]}
+      \field{title}{{Particle Creation by Black Holes}}
+      \field{volume}{43}
+      \field{year}{1975}
+      \field{pages}{199\bibrangedash 220}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/BF02345020
+      \endverb
+    \endentry
+    \entry{Hawking:1976ra}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2be8e4f9a1eec9e94013d9d674ce8962}{%
+           family={Hawking},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{fullhash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{fullhashraw}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{bibnamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorbibnamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authornamehash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorfullhash}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \strng{authorfullhashraw}{2be8e4f9a1eec9e94013d9d674ce8962}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{title}{{Breakdown of Predictability in Gravitational Collapse}}
+      \field{volume}{14}
+      \field{year}{1976}
+      \field{pages}{2460\bibrangedash 2473}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.14.2460
+      \endverb
+    \endentry
+    \entry{Susskind_1995}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=57d5460feef651e0511cad25207f396b}{%
+           family={Susskind},
+           familyi={S\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{57d5460feef651e0511cad25207f396b}
+      \strng{fullhash}{57d5460feef651e0511cad25207f396b}
+      \strng{fullhashraw}{57d5460feef651e0511cad25207f396b}
+      \strng{bibnamehash}{57d5460feef651e0511cad25207f396b}
+      \strng{authorbibnamehash}{57d5460feef651e0511cad25207f396b}
+      \strng{authornamehash}{57d5460feef651e0511cad25207f396b}
+      \strng{authorfullhash}{57d5460feef651e0511cad25207f396b}
+      \strng{authorfullhashraw}{57d5460feef651e0511cad25207f396b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1089-7658}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{The world as a hologram}
+      \field{volume}{36}
+      \field{year}{1995}
+      \field{pages}{6377\bibrangedash 6396}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1063/1.531249
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1063/1.531249
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1063/1.531249
+      \endverb
+    \endentry
+    \entry{Maldacena_1999}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d611177a3d8f74b52d7eb08ae1e6e54e}{%
+           family={Maldacena},
+           familyi={M\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{fullhash}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{fullhashraw}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{bibnamehash}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{authorbibnamehash}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{authornamehash}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{authorfullhash}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \strng{authorfullhashraw}{d611177a3d8f74b52d7eb08ae1e6e54e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1572-9575}
+      \field{journaltitle}{International Journal of Theoretical Physics}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{The Large-N Limit of Superconformal Field Theories and Supergravity}
+      \field{volume}{38}
+      \field{year}{1999}
+      \field{pages}{1113\bibrangedash 1133}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1023/a:1026654312961
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1023/A:1026654312961
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1023/A:1026654312961
+      \endverb
+    \endentry
+    \entry{Galante:2023uyf}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=090b859ec54eda63c0af78e310ab38d4}{%
+           family={Galante},
+           familyi={G\bibinitperiod},
+           given={Damian\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{fullhash}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{fullhashraw}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{bibnamehash}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{authorbibnamehash}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{authornamehash}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{authorfullhash}{090b859ec54eda63c0af78e310ab38d4}
+      \strng{authorfullhashraw}{090b859ec54eda63c0af78e310ab38d4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{PoS}
+      \field{title}{{Modave lectures on de Sitter space {\&} holography}}
+      \field{volume}{Modave2022}
+      \field{year}{2023}
+      \field{pages}{003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22323/1.435.0003
+      \endverb
+      \verb{eprint}
+      \verb 2306.10141
+      \endverb
+    \endentry
+    \entry{Sekino_2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b45ec77e9b7c362e1960fd00de988f56}{%
+           family={Sekino},
+           familyi={S\bibinitperiod},
+           given={Yasuhiro},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=69624867a6eb5c917319a145dc43e9bb}{%
+           family={Susskind},
+           familyi={S\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{fullhash}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{fullhashraw}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{bibnamehash}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{authorbibnamehash}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{authornamehash}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{authorfullhash}{f38276800a0b46fc5e3c059f4128fc2b}
+      \strng{authorfullhashraw}{f38276800a0b46fc5e3c059f4128fc2b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1029-8479}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Fast scramblers}
+      \field{volume}{2008}
+      \field{year}{2008}
+      \field{pages}{065\bibrangedash 065}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/2008/10/065
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/1126-6708/2008/10/065
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/1126-6708/2008/10/065
+      \endverb
+    \endentry
+    \entry{Das_2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=df524a01a7e53af1e59652db115e2bd4}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8adca0990a4425b5d3b8f8b071f838e0}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Chethan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8d228e073b9174fd4d752c4f8fc4f2c8}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Preetham},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=2461ac7d2934133371a55533d3dfd6e2}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Arnab},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{fullhash}{baacdce106f7c98c9f68d106645eb3ef}
+      \strng{fullhashraw}{baacdce106f7c98c9f68d106645eb3ef}
+      \strng{bibnamehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{authorbibnamehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{authornamehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{authorfullhash}{baacdce106f7c98c9f68d106645eb3ef}
+      \strng{authorfullhashraw}{baacdce106f7c98c9f68d106645eb3ef}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1029-8479}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Synthetic fuzzballs: a linear ramp from black hole normal modes}
+      \field{volume}{2023}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/jhep01(2023)153
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/JHEP01(2023)153
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/JHEP01(2023)153
+      \endverb
+    \endentry
+    \entry{Jeong_2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2bac90ef091893db0a9ccbb8336254ef}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Hyun-Sik},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=2461ac7d2934133371a55533d3dfd6e2}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Arnab},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7474acde52c056802dcf03f94a844601}{%
+           family={Pedraza},
+           familyi={P\bibinitperiod},
+           given={Juan\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{67ad8273e358040229b4309b20aefac4}
+      \strng{fullhash}{67ad8273e358040229b4309b20aefac4}
+      \strng{fullhashraw}{67ad8273e358040229b4309b20aefac4}
+      \strng{bibnamehash}{67ad8273e358040229b4309b20aefac4}
+      \strng{authorbibnamehash}{67ad8273e358040229b4309b20aefac4}
+      \strng{authornamehash}{67ad8273e358040229b4309b20aefac4}
+      \strng{authorfullhash}{67ad8273e358040229b4309b20aefac4}
+      \strng{authorfullhashraw}{67ad8273e358040229b4309b20aefac4}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1029-8479}
+      \field{journaltitle}{Journal of High Energy Physics}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Brickwall one-loop determinant: spectral statistics \& Krylov complexity}
+      \field{volume}{2025}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1007/jhep05(2025)154
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/JHEP05(2025)154
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/JHEP05(2025)154
+      \endverb
+    \endentry
+    \entry{das2023fuzzballsrandommatrices}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=df524a01a7e53af1e59652db115e2bd4}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=108b91767b351ee68045ceec2f9c154e}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Sumit\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8adca0990a4425b5d3b8f8b071f838e0}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Chethan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2461ac7d2934133371a55533d3dfd6e2}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Arnab},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{fullhash}{92b89097f8e5a7d8a24d9a1359205ae7}
+      \strng{fullhashraw}{92b89097f8e5a7d8a24d9a1359205ae7}
+      \strng{bibnamehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{authorbibnamehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{authornamehash}{bbd43935e381ee9a55511ef55d18386e}
+      \strng{authorfullhash}{92b89097f8e5a7d8a24d9a1359205ae7}
+      \strng{authorfullhashraw}{92b89097f8e5a7d8a24d9a1359205ae7}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{Fuzzballs and Random Matrices}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2301.11780
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2301.11780
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2301.11780
+      \endverb
+    \endentry
+    \entry{das2023brickwallrotatingbtzdiprampplateau}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=df524a01a7e53af1e59652db115e2bd4}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2461ac7d2934133371a55533d3dfd6e2}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={Arnab},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{fullhash}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{fullhashraw}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{bibnamehash}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{authorbibnamehash}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{authornamehash}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{authorfullhash}{c2ebf3d4e19abf511789ced7eeab7576}
+      \strng{authorfullhashraw}{c2ebf3d4e19abf511789ced7eeab7576}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{Brickwall in Rotating BTZ: A Dip-Ramp-Plateau Story}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2310.06438
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2310.06438
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2310.06438
+      \endverb
+    \endentry
+    \entry{das2025brickwalladsschwarzschildblack}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=df524a01a7e53af1e59652db115e2bd4}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5f727b9bd5409d67de037992517f35e4}{%
+           family={Porey},
+           familyi={P\bibinitperiod},
+           given={Somnath},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5f0648af6ffd70870ae37d2de5e31f8}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Baishali},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{fullhash}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{fullhashraw}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{bibnamehash}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{authorbibnamehash}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{authornamehash}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{authorfullhash}{0d61a1b079908385b75205d4bc4a1bda}
+      \strng{authorfullhashraw}{0d61a1b079908385b75205d4bc4a1bda}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{Brick Wall in AdS-Schwarzschild Black Hole: Normal Modes and Emerging Thermality}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2409.05519
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2409.05519
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2409.05519
+      \endverb
+    \endentry
+    \entry{tHooft:1984kcu}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=588b6b467d7db883ddb395b11d61e98e}{%
+           family={'t\bibnamedelima Hooft},
+           familyi={'\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Gerard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{fullhash}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{fullhashraw}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{bibnamehash}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{authorbibnamehash}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{authornamehash}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{authorfullhash}{588b6b467d7db883ddb395b11d61e98e}
+      \strng{authorfullhashraw}{588b6b467d7db883ddb395b11d61e98e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{title}{{On the Quantum Structure of a Black Hole}}
+      \field{volume}{256}
+      \field{year}{1985}
+      \field{pages}{727\bibrangedash 745}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/0550-3213(85)90418-3
+      \endverb
+    \endentry
+    \entry{Anninos_2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1e0a395650ff12645108d6fb7f06d689}{%
+           family={Anninos},
+           familyi={A\bibinitperiod},
+           given={Dionysios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e17075cf57c24e949184159d29edb328}{%
+           family={Hartnoll},
+           familyi={H\bibinitperiod},
+           given={Sean\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4c704843423c8a2ce231fe4e77f15a22}{%
+           family={Hofman},
+           familyi={H\bibinitperiod},
+           given={Diego\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{fullhash}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{fullhashraw}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{bibnamehash}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{authorbibnamehash}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{authornamehash}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{authorfullhash}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \strng{authorfullhashraw}{180ac8c7c76e3df5d2befc6ccb5b947d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-6382}
+      \field{journaltitle}{Classical and Quantum Gravity}
+      \field{month}{3}
+      \field{number}{7}
+      \field{title}{Static patch solipsism: conformal symmetry of the de Sitter worldline}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{pages}{075002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0264-9381/29/7/075002
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/0264-9381/29/7/075002
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/0264-9381/29/7/075002
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

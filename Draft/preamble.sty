@@ -1,0 +1,198 @@
+%% Uncomment if you are writing a JHEP article (There maybe some uncompatibilities)
+% \usepackage{jheppub}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Packages
+%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+backend=biber,
+sorting=none
+]{biblatex}                                     % Reference manager
+\addbibresource{reference.bib}
+\usepackage{fancyhdr}                           % Creating Footing and Headers
+\usepackage{multirow}                           % Change the number of rows between columns
+\usepackage{graphicx}                           % Inserting images
+\usepackage{amssymb, amsmath, amsfonts}         % Symbols and Fonts for Math Environment
+\numberwithin{equation}{section}
+\usepackage{hyperref}                           % Managing references around the PDF
+\hypersetup{
+colorlinks=true,
+urlcolor=blue,
+anchorcolor=blue,
+citecolor=blue,
+filecolor=blue,
+linkcolor=blue,
+menucolor=blue,
+linktocpage=true
+}
+\usepackage{geometry}                           % Specify the geometry of the page
+\geometry{
+  left = 25mm,
+  top = 25mm,
+  right = 25mm,
+  bottom = 25mm
+}
+\usepackage[indent=.75cm]{parskip}
+\usepackage{mathrsfs}                           % Mathematica RSFS fonts
+\usepackage{wrapfig}                            % Wrapping text around figures
+\usepackage{boxedminipage}                      % Well-formatted mini-pages inside boxes}
+\usepackage{setspace}                           % Setting the space between lines based on text size
+\usepackage{subcaption}                         % Managing sub-figures and how to caption them
+\captionsetup{font={small,sf}}
+\usepackage{amstext}                            % Good formatting of text within sub- and super- indices
+\usepackage{dsfont}                             % Font for the Sets of Numbers
+\usepackage{color}                              % Basic color management
+\usepackage[dvipsnames]{xcolor}                 % Easy access to particular colors
+\usepackage{float}                              % Inserting floating objects
+\usepackage{slashed}                            % Feynman notation
+\usepackage{comment}                            % Environment to ignore part of the file
+\usepackage{contour}                            % Contour and background for text
+\usepackage{tabularx}                           % Specify the width of a tabular
+\usepackage{array}                              % Improve tabular and array options
+\usepackage{tikz}                               % Tikz
+\usetikzlibrary{calc,patterns,angles,quotes,decorations.pathreplacing,decorations.markings}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Quality of Life Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\D}{\Delta}                         \newcommand{\e}{\epsilon}
+\newcommand{\s}{\sigma}                         \newcommand{\G}{\Gamma}
+\renewcommand{\a}{\alpha}                       \renewcommand{\b}{\beta}
+\renewcommand{\d}{\delta}                       \renewcommand{\k}{\kappa}
+\renewcommand{\l}{\lambda}                      \renewcommand{\L}{\Lambda}
+\renewcommand{\S}{\Sigma}                       \renewcommand{\t}{\tau}
+\renewcommand{\th}{\theta}
+\newcommand{\g}{\gamma}                         \newcommand{\Th}{\Theta}
+\newcommand{\vth}{\vartheta}                    \newcommand{\w}{\omega}
+\newcommand{\m}{\mu}                            \newcommand{\Om}{\Omega}
+\newcommand{\n}{\nu}                            \newcommand{\Up}{\Upsilon}
+\newcommand{\rr}{\rho}                          \newcommand{\ve}{\varepsilon}
+\newcommand{\cala}{\mbox{${\cal A}$}}           \newcommand{\calb}{\mbox{${\cal B}$}}
+\newcommand{\calc}{\mbox{${\cal C}$}}           \newcommand{\cald}{\mbox{${\cal D}$}}
+\newcommand{\cale}{\mbox{${\cal E}$}}           \newcommand{\calf}{\mbox{${\cal F}$}}
+\newcommand{\calg}{\mbox{${\cal G}$}}           \newcommand{\calh}{\mbox{${\cal H}$}}
+\newcommand{\cali}{\mbox{${\cal I}$}}           \newcommand{\calj}{\mbox{${\cal J}$}}
+\newcommand{\calk}{\mbox{${\cal K}$}}           \newcommand{\call}{\mbox{${\cal L}$}}
+\newcommand{\calm}{\mbox{${\cal M}$}}           \newcommand{\caln}{\mbox{${\cal N}$}}
+\newcommand{\calo}{\mbox{${\cal O}$}}           \newcommand{\calp}{\mbox{${\cal P}$}}
+\newcommand{\calq}{\mbox{${\cal Q}$}}           \newcommand{\calr}{\mbox{${\cal R}$}}
+\newcommand{\cals}{\mbox{${\cal S}$}}           \newcommand{\calt}{\mbox{${\cal T}$}}
+\newcommand{\calu}{\mbox{${\cal U}$}}           \newcommand{\calv}{\mbox{${\cal V}$}}
+\newcommand{\calw}{\mbox{${\cal W}$}}           \newcommand{\calx}{\mbox{${\cal X}$}}
+\newcommand{\caly}{\mbox{${\cal Y}$}}           \newcommand{\calz}{\mbox{${\cal Z}$}}
+\newcommand{\scra}{\mbox{${\mathscr A}$}}      \newcommand{\scrb}{\mbox{${\mathscr B}$}}
+\newcommand{\scrc}{\mbox{${\mathscr C}$}}      \newcommand{\scrd}{\mbox{${\mathscr D}$}}
+\newcommand{\scre}{\mbox{${\mathscr E}$}}      \newcommand{\scrf}{\mbox{${\mathscr F}$}}
+\newcommand{\scrg}{\mbox{${\mathscr G}$}}      \newcommand{\scrh}{\mbox{${\mathscr H}$}}
+\newcommand{\scri}{\mbox{${\mathscr I}$}}      \newcommand{\scrj}{\mbox{${\mathscr J}$}}
+\newcommand{\scrk}{\mbox{${\mathscr K}$}}      \newcommand{\scrl}{\mbox{${\mathscr L}$}}
+\newcommand{\scrm}{\mbox{${\mathscr M}$}}      \newcommand{\scrn}{\mbox{${\mathscr N}$}}
+\newcommand{\scro}{\mbox{${\mathscr O}$}}      \newcommand{\scrp}{\mbox{${\mathscr P}$}}
+\newcommand{\scrq}{\mbox{${\mathscr Q}$}}      \newcommand{\scrr}{\mbox{${\mathscr R}$}}
+\newcommand{\scrs}{\mbox{${\mathscr S}$}}      \newcommand{\scrt}{\mbox{${\mathscr T}$}}
+\newcommand{\scru}{\mbox{${\mathscr U}$}}      \newcommand{\scrv}{\mbox{${\mathscr V}$}}
+\newcommand{\scrw}{\mbox{${\mathscr W}$}}      \newcommand{\scrx}{\mbox{${\mathscr X}$}}
+\newcommand{\scry}{\mbox{${\mathscr Y}$}}      \newcommand{\scrz}{\mbox{${\mathscr Z}$}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\LA}[1]{\label{#1}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\third}{\frac{1}{3}}
+\newcommand{\fourth}{\frac{1}{4}}
+\newcommand{\sixteenth}{\frac{1}{16}}
+\newcommand{\inv}[1]{\frac{1}{#1}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\lra}{\Longrightarrow}
+\newcommand{\lla}{\Longleftarrow}
+\newcommand{\dint}[2]{\int_{#1}^{#2}\!\!}
+\newcommand{\ud}{\,\mathrm{d}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\del}{\partial}
+\newcommand{\grad}{\nabla}
+\newcommand{\curl}{\nabla\times}
+\newcommand{\Div}{\nabla\cdot}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\DeDeB}{\textrm{D8-}\overline{ \textrm{D8}}}
+\newcommand{\Ukk}{U_{\rm KK}}
+\newcommand{\Mkk}{M_{\rm KK}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\wh}{\widehat}
+\newcommand{\nw}{{{ \mathfrak w}}}
+\newcommand{\nq}{{{ \mathfrak q}}}
+\newcommand{\nd}{{{ \mathbf{d}  }}}
+\newcommand{\tg}{{\mathcal{G}}}
+\newcommand{\nJ}{\mbox{${J}$}}  
+\newcommand{\nT}{\mbox{${T}$}} 
+\newcommand{\nS}{\mbox{${S}$}}  
+\newcommand{\nQ}{\mbox{${Q}$}}
+\newcommand{\tb}{\mbox{${\tilde{\beta}}$}}
+\newcommand{\bb}{\mbox{${\bar{\beta}}$}}
+\newcommand{\bT}{\mbox{${\bar{T}}$}}
+\newcommand{\tT}{\mbox{$\tilde{T}$}}
+\newcommand{\grandpot}{{G}}
+\newcommand{\tQ}{{\tilde{Q}}}
+\newcommand{\tmu}{{\tilde{\mu}}}
+\newcommand{\tbeta}{{\tilde{\beta}}}
+\newcommand{\ttt}{{\tilde{t}}}
+\newcommand{\trr}{{\tilde{r}}}
+\newcommand{\txx}{{\tilde{x}}}
+\newcommand{\tyy}{{\tilde{y}}}
+\newcommand{\tTemp}{{\tilde{T}}}
+\newcommand{\tss}{{\tilde{s}}}
+\newcommand{\trho}{{\tilde{\rho}}}
+\newcommand{\hT}{{\wh{T}}}
+\newcommand{\hm}{{\wh{\mu}}}
+\newcommand{\udt}{{\underline{t}}}
+\newcommand{\udr}{{\underline{r}}}
+\newcommand{\udx}{{\underline{x}}}
+\newcommand{\udy}{{\underline{y}}}
+\newcommand{\mO}{{\mathcal{O}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcommand{\td}{\text{d}}
+\newcommand{\new}[1]{{\color{red}{#1}}}
+\newcommand{\el}{\ell_{\text{AdS}}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{xparse}
+\newcommand{\CW}[1]{{\color{brown}{#1}}}
+\newcommand{\KW}[1]{{\color{cyan}{#1}}}
+\newcommand{\BJ}[1]{{\color{purple}{#1}}}
+\ExplSyntaxOn
+\NewDocumentCommand{\HS}{m}
+ {
+  \seq_set_split:Nnn \l_tmpa_seq { ~ } { #1 }
+  \seq_map_inline:Nn \l_tmpa_seq { \contour{green}{##1} ~ } \unskip
+ }
+\ExplSyntaxOff
+\newcommand{\hypr}{{}_2F_1}
+\newcommand{\Arg}{\text{Arg}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Redefinition of ToC command
+\makeatletter
+\renewcommand\tableofcontents{
+    \null\hfill\textbf{\huge\contentsname}\hfill\null\par
+    \noindent\hrulefill\par
+    \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
+    {\large\@starttoc{toc}}
+    \noindent\hrulefill\par
+    \newpage
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Header and Footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
