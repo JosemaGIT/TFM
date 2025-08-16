@@ -375,6 +375,14 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT ./figs/Stoe_billiards.jpg
+INPUT ./figs/Stoe_billiards.jpg
+INPUT /home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
@@ -383,7 +391,6 @@ INPUT /home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT ./etc/data/BTZ_SIGMA0.dat
-INPUT /home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
 INPUT /home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmsans9-regular.luc
 INPUT ./etc/data/BTZ_SIGMA2.dat
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
@@ -394,6 +401,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
@@ -423,12 +432,14 @@ INPUT ./etc/data/KRYLOV_STATIC0017.dat
 INPUT ./etc/data/KRYLOV_STATIC0024.dat
 INPUT ./etc/data/KRYLOV_STATIC0030.dat
 INPUT ./etc/data/KRYLOV_STATIC05.dat
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
 INPUT /home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT ./main.aux
 INPUT ./main.out
 INPUT ./main.run.xml
 OUTPUT main.run.xml
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

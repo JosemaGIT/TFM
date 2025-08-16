@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1755068159.58666 "main.bcf" "main.bbl" "main" 1755068553.51921 0
-  "main.bcf" 1755068553.11176 110358 648c5f28f83340f826ffbb2f7b23dc5c "lualatex"
-  "reference.bib" 1755066480.85202 5326 f96383cc2241de7fd774a9817e7ae02a ""
+["biber main"] 1755340765.26661 "main.bcf" "main.bbl" "main" 1755350469.11201 0
+  "main.bcf" 1755350468.73048 111303 ec69e534284d56ebefaba26b0a98aa74 "lualatex"
+  "reference.bib" 1755340649.29947 11618 2b3915dfbdedd809d153bdb35dca5903 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1755068548.28697 "main.tex" "main.pdf" "main" 1755068553.51948 0
+["lualatex"] 1755350464.06589 "main.tex" "main.pdf" "main" 1755350469.11227 0
   "/home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1753873641.55511 81837 ac5b1b311ade3065c5dda4c0bbd0f8cb ""
   "/home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1753873202.6675 128410 d0a7d6c5b84cb323c732980fd1a15945 ""
   "/home/josema/.texlive2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc" 1753876595.86697 136491 508cc4ef558221ac746fab8d9af233da ""
@@ -45,6 +45,13 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -72,6 +79,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
@@ -388,12 +396,13 @@
   "etc/data/STATIC_SIGMA0.dat" 1754424296.56848 123850 df5d438e7e8d8981b53aec66a54c804d ""
   "etc/data/STATIC_SIGMA2.dat" 1754424299.81851 43851 75ee0eb565e10cb019f11c1af28a8323 ""
   "figs/00-titlepage/madrid.png" 1753873872.63453 352234 4380a55314af230a34e7f5533101cd1c ""
-  "main.aux" 1755068553.10876 11351 67c9d8a1d94f4395eaa8ae2a7c4d4660 "lualatex"
-  "main.bbl" 1755068160.58761 25506 17d56bddac3bf43ac10cf4ea8527b55b "biber main"
-  "main.out" 1755068553.11076 4758 baa8367b49051e27855e1b8cf7831645 "lualatex"
-  "main.run.xml" 1755068553.11276 2339 4dd26dbe504c72b27b93825afb3551f7 "lualatex"
-  "main.tex" 1755068340.61247 39749 1e367b5496a29437e9bcabbf1faae990 ""
-  "main.toc" 1755068553.11276 2190 7fdb9e86f013b5fb1143779cf2554790 "lualatex"
+  "figs/Stoe_billiards.jpg" 1755333707.72472 44561 eafd83c96399cbb64536a29477079cac ""
+  "main.aux" 1755350468.72648 14084 730570aa2bd788014811fe5653e384cf "lualatex"
+  "main.bbl" 1755340766.29513 45154 4903aaee440f9470ab56ed82cd078358 "biber main"
+  "main.out" 1755350468.72948 4758 baa8367b49051e27855e1b8cf7831645 "lualatex"
+  "main.run.xml" 1755350468.73148 2339 4dd26dbe504c72b27b93825afb3551f7 "lualatex"
+  "main.tex" 1755350458.39034 43979 d96a28dcf0e615a2dc4af2396b477b6f ""
+  "main.toc" 1755350468.73148 2190 09041016d4cf9a923babacc568e23a1e "lualatex"
   "preamble.sty" 1755068541.48663 8823 8c9241161f8335b72341ea813a8ba4e9 ""
   (generated)
   "main.aux"

@@ -573,6 +573,461 @@
       \verb https://arxiv.org/abs/2409.05519
       \endverb
     \endentry
+    \entry{Noether_1971}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8cc5824bd13361a82091c2c493168aa9}{%
+           family={Noether},
+           familyi={N\bibinitperiod},
+           given={Emmy},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{fullhash}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{fullhashraw}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{bibnamehash}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{authorbibnamehash}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{authornamehash}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{authorfullhash}{8cc5824bd13361a82091c2c493168aa9}
+      \strng{authorfullhashraw}{8cc5824bd13361a82091c2c493168aa9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1532-2424}
+      \field{journaltitle}{Transport Theory and Statistical Physics}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Invariant variation problems}
+      \field{volume}{1}
+      \field{year}{1971}
+      \field{pages}{186\bibrangedash 207}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1080/00411457108231446
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/00411457108231446
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/00411457108231446
+      \endverb
+    \endentry
+    \entry{stockmann2010microwave}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=25a896a1c39481a606d0755ad147fa87}{%
+           family={Stöckmann},
+           familyi={S\bibinitperiod},
+           given={Hans-Jürgen},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{25a896a1c39481a606d0755ad147fa87}
+      \strng{fullhash}{25a896a1c39481a606d0755ad147fa87}
+      \strng{fullhashraw}{25a896a1c39481a606d0755ad147fa87}
+      \strng{bibnamehash}{25a896a1c39481a606d0755ad147fa87}
+      \strng{authorbibnamehash}{25a896a1c39481a606d0755ad147fa87}
+      \strng{authornamehash}{25a896a1c39481a606d0755ad147fa87}
+      \strng{authorfullhash}{25a896a1c39481a606d0755ad147fa87}
+      \strng{authorfullhashraw}{25a896a1c39481a606d0755ad147fa87}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scholarpedia}
+      \field{number}{10}
+      \field{title}{Microwave billiards and quantum chaos}
+      \field{volume}{5}
+      \field{year}{2010}
+      \field{pages}{10243}
+      \range{pages}{1}
+    \endentry
+    \entry{wentzel_verallgemeinerung_1926}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=197eed1c6632857bbfb7f24b98f95a51}{%
+           family={Wentzel},
+           familyi={W\bibinitperiod},
+           given={Gregor},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{fullhash}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{fullhashraw}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{bibnamehash}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{authorbibnamehash}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{authornamehash}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{authorfullhash}{197eed1c6632857bbfb7f24b98f95a51}
+      \strng{authorfullhashraw}{197eed1c6632857bbfb7f24b98f95a51}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In dieser Note soll eine Methode entwickelt werden, die Eigenwertprobleme der Schrödingerschen „Wellenmechanik“ durch sukzessive Approximation von dem Grenzfall der klassischen Mechanik (bzw. der früheren Quantentheorie) aus zu lösen. Dieses Näherungsverfahren kann in vielen Fällen so eingerichtet werden, daß es nach wenigen Schritten abbricht. Anwendungen (H-Atom und Starkeffekt) finden sich am Schlusse.}
+      \field{issn}{0044-3328}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Eine {Verallgemeinerung} der {Quantenbedingungen} für die {Zwecke} der {Wellenmechanik}}
+      \field{volume}{38}
+      \field{year}{1926}
+      \field{pages}{518\bibrangedash 529}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/BF01397171
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01397171
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01397171
+      \endverb
+    \endentry
+    \entry{kramers_wellenmechanik_1926}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ff8a8a28c2cd7a744d45e6d5a289b51a}{%
+           family={Kramers},
+           familyi={K\bibinitperiod},
+           given={H.\bibnamedelimi A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{fullhash}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{fullhashraw}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{bibnamehash}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{authorbibnamehash}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{authornamehash}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{authorfullhash}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \strng{authorfullhashraw}{ff8a8a28c2cd7a744d45e6d5a289b51a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Die Arbeit behandelt eine Methode zur annähernden Lösung des Schrödingerschen Eigenwert- und Eigenfunktionproblems für ein willkürliches System von einem Freiheitsgrad. In § 1 wird gezeigt, daß die sogenannte halbzahlige Quantisierung eine natürliche erste Näherung darstellt. § 2 enthält Näherungsformeln zur graphischen Bestimmung der Eigenfunktionen. In § 3 wird das Verhältnis der Methode zu dem von Brillouin und Wentzel betrachteten systematischen Approximationsverfahren besprochen. § 4 behandelt Zentralbewegungen und enthält Annäherungsformeln für Spektralprobleme.}
+      \field{issn}{0044-3328}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Wellenmechanik und halbzahlige {Quantisierung}}
+      \field{volume}{39}
+      \field{year}{1926}
+      \field{pages}{828\bibrangedash 840}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/BF01451751
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01451751
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01451751
+      \endverb
+    \endentry
+    \entry{Brillouin:1926blg}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5bb04fae20abacfb4a7669a128e049ae}{%
+           family={Brillouin},
+           familyi={B\bibinitperiod},
+           given={Léon},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{fullhash}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{fullhashraw}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{bibnamehash}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{authorbibnamehash}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{authornamehash}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{authorfullhash}{5bb04fae20abacfb4a7669a128e049ae}
+      \strng{authorfullhashraw}{5bb04fae20abacfb4a7669a128e049ae}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Compt. Rend. Hebd. Seances Acad. Sci.}
+      \field{number}{1}
+      \field{title}{{La mécanique ondulatoire de Schrödinger; une méthode générale de resolution par approximations successives}}
+      \field{volume}{183}
+      \field{year}{1926}
+      \field{pages}{24\bibrangedash 26}
+      \range{pages}{3}
+    \endentry
+    \entry{stone_einsteins_2005}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e69d165a40b78d84dc629ed90b2c9f42}{%
+           family={Stone},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi Douglas},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{fullhash}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{fullhashraw}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{bibnamehash}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{authorbibnamehash}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{authornamehash}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{authorfullhash}{e69d165a40b78d84dc629ed90b2c9f42}
+      \strng{authorfullhashraw}{e69d165a40b78d84dc629ed90b2c9f42}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Chaotic systems were beyond the reach of an ingenious coordinate-invariant quantization scheme developed by Albert Einstein, and to this day, their quantization remains a challenge.}
+      \field{issn}{0031-9228, 1945-0699}
+      \field{journaltitle}{Physics Today}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Einstein’s {Unknown} {Insight} and the {Problem} of {Quantizing} {Chaos}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{58}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{37\bibrangedash 43}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1063/1.2062917
+      \endverb
+      \verb{file}
+      \verb PDF:/home/josema/Zotero/storage/9CKBXEKZ/Stone - 2005 - Einstein’s Unknown Insight and the Problem of Quantizing Chaos.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/physicstoday/article/58/8/37/391539/Einstein-s-Unknown-Insight-and-the-Problem-of
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/physicstoday/article/58/8/37/391539/Einstein-s-Unknown-Insight-and-the-Problem-of
+      \endverb
+    \endentry
+    \entry{gutzwiller_periodic_1971}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d168760a297e14bb731aac8f869c9c34}{%
+           family={Gutzwiller},
+           familyi={G\bibinitperiod},
+           given={Martin\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d168760a297e14bb731aac8f869c9c34}
+      \strng{fullhash}{d168760a297e14bb731aac8f869c9c34}
+      \strng{fullhashraw}{d168760a297e14bb731aac8f869c9c34}
+      \strng{bibnamehash}{d168760a297e14bb731aac8f869c9c34}
+      \strng{authorbibnamehash}{d168760a297e14bb731aac8f869c9c34}
+      \strng{authornamehash}{d168760a297e14bb731aac8f869c9c34}
+      \strng{authorfullhash}{d168760a297e14bb731aac8f869c9c34}
+      \strng{authorfullhashraw}{d168760a297e14bb731aac8f869c9c34}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-2488}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Periodic {Orbits} and {Classical} {Quantization} {Conditions}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{12}
+      \field{year}{1971}
+      \field{urldateera}{ce}
+      \field{pages}{343\bibrangedash 358}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1063/1.1665596
+      \endverb
+      \verb{file}
+      \verb Snapshot:/home/josema/Zotero/storage/ZJCPXWSW/1.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1665596
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1665596
+      \endverb
+    \endentry
+    \entry{wigner_characteristic_1955}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b68c34c3f76a4c27126c15b8f7d72d08}{%
+           family={Wigner},
+           familyi={W\bibinitperiod},
+           given={Eugene\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{bibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorbibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authornamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Annals of Mathematics}
+      \field{note}{Publisher: [Annals of Mathematics, Trustees of Princeton University on Behalf of the Annals of Mathematics, Mathematics Department, Princeton University]}
+      \field{number}{3}
+      \field{title}{Characteristic {Vectors} of {Bordered} {Matrices} {With} {Infinite} {Dimensions}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{62}
+      \field{year}{1955}
+      \field{urldateera}{ce}
+      \field{pages}{548\bibrangedash 564}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.2307/1970079
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/1970079
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/1970079
+      \endverb
+    \endentry
+    \entry{wigner_characteristics_1957}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b68c34c3f76a4c27126c15b8f7d72d08}{%
+           family={Wigner},
+           familyi={W\bibinitperiod},
+           given={Eugene\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{bibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorbibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authornamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Annals of Mathematics}
+      \field{note}{Publisher: [Annals of Mathematics, Trustees of Princeton University on Behalf of the Annals of Mathematics, Mathematics Department, Princeton University]}
+      \field{number}{2}
+      \field{title}{Characteristics {Vectors} of {Bordered} {Matrices} with {Infinite} {Dimensions} {II}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{65}
+      \field{year}{1957}
+      \field{urldateera}{ce}
+      \field{pages}{203\bibrangedash 207}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.2307/1969956
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/1969956
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/1969956
+      \endverb
+    \endentry
+    \entry{wigner_distribution_1958}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b68c34c3f76a4c27126c15b8f7d72d08}{%
+           family={Wigner},
+           familyi={W\bibinitperiod},
+           given={Eugene\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{bibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorbibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authornamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Annals of Mathematics}
+      \field{note}{Publisher: [Annals of Mathematics, Trustees of Princeton University on Behalf of the Annals of Mathematics, Mathematics Department, Princeton University]}
+      \field{number}{2}
+      \field{title}{On the {Distribution} of the {Roots} of {Certain} {Symmetric} {Matrices}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{67}
+      \field{year}{1958}
+      \field{urldateera}{ce}
+      \field{pages}{325\bibrangedash 327}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.2307/1970008
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/1970008
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/1970008
+      \endverb
+    \endentry
+    \entry{dyson_statistical_1962}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=107f18cea36e2f8b65ea374dfbd66723}{%
+           family={Dyson},
+           familyi={D\bibinitperiod},
+           given={Freeman\bibnamedelima J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{fullhash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{fullhashraw}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{bibnamehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authorbibnamehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authornamehash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authorfullhash}{107f18cea36e2f8b65ea374dfbd66723}
+      \strng{authorfullhashraw}{107f18cea36e2f8b65ea374dfbd66723}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-2488, 1089-7658}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Statistical {Theory} of the {Energy} {Levels} of {Complex} {Systems}. {I}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{3}
+      \field{year}{1962}
+      \field{urldateera}{ce}
+      \field{pages}{140\bibrangedash 156}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1063/1.1703773
+      \endverb
+      \verb{file}
+      \verb PDF:/home/josema/Zotero/storage/SHLUUPGX/Dyson - 1962 - Statistical Theory of the Energy Levels of Complex Systems. I.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/jmp/article/3/1/140/453743/Statistical-Theory-of-the-Energy-Levels-of-Complex
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/jmp/article/3/1/140/453743/Statistical-Theory-of-the-Energy-Levels-of-Complex
+      \endverb
+    \endentry
     \entry{tHooft:1984kcu}{article}{}{}
       \name{author}{1}{}{%
         {{hash=588b6b467d7db883ddb395b11d61e98e}{%

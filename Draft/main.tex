@@ -65,7 +65,7 @@ This statement has found realization with the AdS/CFT correspondence, conjecture
 
 Even though the AdS/CFT correspondence, as I already pointed out, has proven to work quite well, it most likely cannot be applied in our universe to obtain a description of quantum gravity whatsoever, as most astronomical observations points towards our universe being de Sitter. This encompass a whole new problem on its own, since there is still no consensus in what kind of theory is dual to de-Sitter spacetimes or how this duality manifest itself (See \cite{Galante:2023uyf} for a recent review on de-Sitter holography). Finding it would entail an enormous boost in the field of Quantum Gravity.
 
-Now, we still have to discuss the second question we mentioned. What are these BH microstates? From string theory, there exists one major candidate: Fuzzballs. 
+Now, we still have to discuss the second question we mentioned. What are these BH microstates? From string theory, there exist one major candidate: Fuzzballs. 
 
 This \textquotedblleft Fuzzball proposal\textquotedblright~ states there exists $e^{S}$ horizon-free, non-singular solutions, known as Fuzzballs, which globally look like the BH, but differ from it up to the horizon-scale, i.e, the interior of the BH gets replaced by something different. The BH would come out as the average of an ensemble of these Fuzzballs. The singularity and the event horizon would come up as a by product of considering the classical limit in the average process.
 
@@ -75,7 +75,7 @@ In the context of everything we have discussed so far, one can argue that BHs mu
 
 One then, would like to see if this Fuzzballs reproduce this RMT-like behaviour. However, testing this kind of behaviour has proven to be very challenging \cite{Das_2023}. That's what has lead different authors \cite{Das_2023,Jeong_2025,das2023fuzzballsrandommatrices,das2023brickwallrotatingbtzdiprampplateau,das2025brickwalladsschwarzschildblack} to consider a \textquotedblleft Fuzzball Toy model\textquotedblright, a Brickwall model to be more precise, that could serve as a way to detect some hint of RMT behaviour. And, indeed this has been the case, the normal modes of scalar and fermionic fields has shown evidence of Quantum Chaotic features by different probes: level-repulsion, the dip-ramp-plateau structure of the Spectral Form Factor and the Krylov Complexity of these states.
 
-This master thesis aims to used the techniques developed and the considerations taken into account in the mentioned studies performed over AdS spacetimes, and apply them on dS spacetimes to try to enhance our understanding of the quantum aspects of cosmological and black hole spacetimes and hopefully shed a bit of more light on the holographic nature of de Sitter space.
+This master thesis aims to used the techniques developed and the considerations taken into account in the mentioned studies performed over AdS spacetimes, and apply them on dS spacetimes to try to enhance our understanding of the quantum aspects of cosmological and BH spacetimes and hopefully shed a bit of more light on the holographic nature of de Sitter space. 
 
 {\noindent\color{red} Once everything is finished, I will write here a brief summary of what I discuss in each part.}
 
@@ -87,9 +87,39 @@ This master thesis aims to used the techniques developed and the considerations 
 \subsection{Asymptotically de Sitter spacetimes}
 \subsection{Diagnostics of quantum chaos}
 
-From the classical point of view, although no universally accepted mathematical definition of Chaos exists, we have an intuitive senses of what it means. In a few words, a chaotic system is that "very sensitive to initial conditions". Indeed, chaos is a broadly interdisciplinary area of scientific study which most notably has been used in the field of Statistical Mechanics to study the process of thermalization of macroscopic systems.
+From the classical point of view, although no universally accepted mathematical definition of Chaos exists, we have an intuitive senses of what it means. In a few words, we can say that a system is chaotic if it is \textquotedblleft very sensitive to initial conditions\textquotedblright. Although chaotic dynamics are that generic, thre is a class of systems 
+for which dynamics are not chaotic, known as integrable systems. Indeed, if we consders a classical system with N degrees of freedom with a Hamiltonian in terms of cannonical coordinates and momenta $H(\mathbf{p},\mathbf{q})$, one can say that this system is integrable if it has as many functionally independent conserved quantities $\mathbf{I}=\left(I_1,...,I_N\right)$ as degrees of freedom. This can be expressed as:
+
+\begin{equation}
+    \left\{I_j,H\right\}=\left\{I_j,I_k\right\} = 0, ~~~~\text{where}~~~\left\{g,h\right\} = \sum^N\frac{\del g}{\del q_j}\frac{\del h}{\del p_j} - \frac{\del g}{\del p_j}\frac{\del h}{\del q_j}
+\end{equation}
+
+Figure \ref{Example_Chaos}, is a good example where one can see the difference between integrable (a) and chaotic systems (b). The first system is symetric under time traslation and 2D-rotations, so following Noether's Theorem \cite{Noether_1971}, Energy and Angular Momenta is conserved, which makes the the system non-chaotic as one can easily infer from the trajectories. On the other hand, if one considers the second system we have lost 2D-rotations symetry, so in this case only Energy is conseved. This inexistance of a second conserved quantity then leave us with a chaotic system in which if one minimally perturbes initial conditions it can be seen that after a certain scale of time, trajectories become uncorrelated.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{figs/Stoe_billiards.jpg}
+    \caption{Each line represent examples of trajectories of a particle bouncing in a cavity with perfectly elastic collisions: (a) Circular shaped, non-chaotic; (b) Stadium shaped, chaotic. Image taken from scholarpedia \cite{stockmann2010microwave}}
+    \label{Example_Chaos}
+\end{figure}
 
 Considering this one could may well be in interested in studying the concept of chaos in quantum systems. However, it was clear since the early days of quantum mechanics that the classical notion of chaos could not be directly applied to quantum systems for different reasons. First of all, as Schrödinger's equation is linear, it cannot have exponentially departing trajectories for wave functions (the overlap between two different quantum states that evolve with the same Hamiltonian will not vary). Additionally, although one can use quantum mechanic formulations based on the phases-space, "trajectories" do not exist in quantum mechanics and consequently you cannot specify the phase-space initial conditions as position and momenta cannot be specified simultaneously. This then brings up the question of what is the analogue of chaotic motion in quantum systems.
+
+In the early days of quantum mechanics, integrable systems were prety much understood, based on Bohr's initial insight. Along allowed trejectories withing quantum mechanics, the classical action must satisfy the quantization condition:
+
+\begin{equation}
+    \oint p\dd q =2\pi\hbar n,
+\end{equation}
+
+i.e, it must be quantized in units of $\hbar$, a conjecture which ended up being formalized in terms of the WKB approximation \cite{wentzel_verallgemeinerung_1926,kramers_wellenmechanik_1926,Brillouin:1926blg}. However, chaotic systems remained a mystery for a very long time, mostly due to the fact that it was not clear how one could quantize classical chaotic trajectories, which were not closed in phase space. Some people attempted to resolve these problems, even Einstein wrote a paper about it in 1917 \cite{stone_einsteins_2005}. However, time went by and it wasn't until the 70s when Gutzwiller work \cite{gutzwiller_periodic_1971} brought these issues into focus of lots of research that fell under the name of the title quantum chaos. Up to this day, nonetheless there many question that need solving, including a precise definition of what do we really mean by quantum chaos.
+
+The most crucial results that lay the foundation on which quantum chaos builds came from works of Wigner and Dyson \cite{wigner_characteristic_1955,wigner_characteristics_1957,wigner_distribution_1958,dyson_statistical_1962}. They developed a theory to help them understand the spectra of complex atomic nuclei, known as Random Matrix Theory (RMT) which became one of the cornerstones of modern physics. 
+
+The original idea that lead Wigner to this theory, was realizing that trying to predict exact energy levels and their corresponding eigenstates in complex systems was too difficult. Conversely, the correct approach was to study the statistical properties of said spectrum. Secondly, he also realised that if one looks into energy window sufficiently small, so that the density of states is approximately constant, then the Hamiltonian, would look essentially like a random matrix. Following this idea, then, if one studies the statistical properties of random matrices (subject to the symmetries of the Hamiltonian of interest, such us for example time-reversal symmetry of the system, i.e unitarity of the evolution operator), we could gain insight on the statistical properties of energy levels and eigenstates of complex systems.
+
+This insight was very revolutionary and incredibly counter-intuitive. Let's just stop to think about it
+
+
 
 \subsubsection{Level spacing distributions and spectral form factor}
 
@@ -101,7 +131,7 @@ Considering this one could may well be in interested in studying the concept of 
 
 \section{de Sitter Black holes in Brickwall models}\LA{deSitter_BH}
 
-It was Gerard 't Hooft, who first introduced the Brickwall model \cite{tHooft:1984kcu}, as an elementary exercise to arrive at the entropy of a black hole following an statistical mechanics perspective. As we already discussed in the introduction, GR \textquotedblleft breaks\textquotedblright~  at the event horizon of a BH as well as at the cosmological horizon of dS spacetimes, which means that we cannot predict how a field that propagates within those spacetimes works at those exact points. However, nothing prevents us from getting arbitrarily close to this horizon.
+It was Gerard 't Hooft, who first introduced the Brickwall model \cite{tHooft:1984kcu}, as an elementary exercise to arrive at the entropy of a BH following an statistical mechanics perspective. As we already discussed in the introduction, GR \textquotedblleft breaks\textquotedblright~  at the event horizon of a BH as well as at the cosmological horizon of dS spacetimes, which means that we cannot predict how a field that propagates within those spacetimes works at those exact points. However, nothing prevents us from getting arbitrarily close to this horizon.
 
 Considering this, one could define a \textquotedblleft stretched horizon \textquotedblright and impose a Dirichlet boundary condition in said horizon. The distance between the actual horizon and this stretched one, would work as an UV cut-off of the theory. Normally, when one works with event and cosmological horizons, incoming-wave boundary conditions are considered, i.e, waves just enters and does not come out of this horizons. In this context, one could only obtain quasi-normal modes that decay with time. However, in our Brickwall model, certain configurations of boundary conditions make the obtention of normal modes possible as we will see in the following subsections.
 
@@ -111,7 +141,7 @@ During this work, we will only consider scalar fields in favor of simplicity, ho
 
 \subsubsection{A warm-up: three-dimensional AdS black holes}
 
-Firstly, let's review what \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices} already calculated and analyzed, the normal modes of the scalar field over the BTZ metric, an asymptotically $AdS_{2+1}$ black hole. This metric takes the following form\footnote{I am considering the AdS length and the event horizon radius equal to one} in the usual polar coordinates:
+Firstly, let's review what \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices} already calculated and analyzed, the normal modes of the scalar field over the BTZ metric, an asymptotically $AdS_{2+1}$ BH. This metric takes the following form\footnote{I am considering the AdS length and the event horizon radius equal to one} in the usual polar coordinates:
 
 \begin{equation}\LA{BTZ_METRIC}
     \dd s^2_{BTZ} = -f(r)\dd t^2 + \frac{\dd r^2}{f(r)} + r^2 \dd\varphi^2
@@ -123,7 +153,7 @@ Firstly, let's review what \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatri
     f(r) = r^2 - 1 ~~~~~:~~~~~ 1 < r < \infty
 \end{equation}
 
-{\noindent and $\varphi$ periodic in 2\pi}
+{\noindent and $\varphi$ periodic in $2\pi$}
 
 However, we can simplify our future calculations if we consider the following change of coordinates:
 
@@ -295,7 +325,7 @@ In the end then, we just need to specify the values of $\lambda_J$ and $\mu_J$ a
 
 \subsubsection{Empty dS spacetime}
 
-Considering what we reviewed in the previous subsection about the already performed calculation of the normal modes of a scalar field over the BTZ black hole, it is quite straightforward to use the same considerations to obtain the normal modes of scalar fields over the de Sitter static patch\footnote{Mostly because as its metric can be obtained applying a spacetime isomorphism to the BTZ metric} \cite{Anninos_2012} .
+Considering what we reviewed in the previous subsection about the already performed calculation of the normal modes of a scalar field over the BTZ BH, it is quite straightforward to use the same considerations to obtain the normal modes of scalar fields over the de Sitter static patch\footnote{Mostly because as its metric can be obtained applying a spacetime isomorphism to the BTZ metric} \cite{Anninos_2012} .
 
 The metric of the $dS_{d+1}$ static patch\footnote{I am considering the dS length and the cosmological horizon radius equal to one} in the usual spherical coorinates takes the following form:
 
@@ -569,7 +599,7 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
             \end{axis}
         \end{tikzpicture}
     }
-    \caption{Level spacing distributions of the normal modes. The solid lines are given by their respective analytic distribution}
+    \caption{Level spacing distributions of the normal modes, considering a disorder average. The solid lines are given by their respective analytic distribution}
 \end{figure}
 
 \begin{figure}[ht]
