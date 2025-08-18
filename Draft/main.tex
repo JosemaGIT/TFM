@@ -85,7 +85,7 @@ This master thesis aims to used the techniques developed and the considerations 
 
 \section{Preliminaries}\LA{PRELIM}
 \subsection{Asymptotically de Sitter spacetimes}
-\subsection{Diagnostics of quantum chaos}
+\subsection{Random Matrix Theory: Diagnostics of quantum chaos}
 
 From the classical point of view, although no universally accepted mathematical definition of Chaos exists, we have an intuitive senses of what it means. In a few words, we can say that a system is chaotic if it is \textquotedblleft very sensitive to initial conditions\textquotedblright. Although chaotic dynamics are that generic, thre is a class of systems 
 for which dynamics are not chaotic, known as integrable systems. Indeed, if we consders a classical system with N degrees of freedom with a Hamiltonian in terms of cannonical coordinates and momenta $H(\mathbf{p},\mathbf{q})$, one can say that this system is integrable if it has as many functionally independent conserved quantities $\mathbf{I}=\left(I_1,...,I_N\right)$ as degrees of freedom. This can be expressed as:
@@ -113,15 +113,166 @@ In the early days of quantum mechanics, integrable systems were prety much under
 
 i.e, it must be quantized in units of $\hbar$, a conjecture which ended up being formalized in terms of the WKB approximation \cite{wentzel_verallgemeinerung_1926,kramers_wellenmechanik_1926,Brillouin:1926blg}. However, chaotic systems remained a mystery for a very long time, mostly due to the fact that it was not clear how one could quantize classical chaotic trajectories, which were not closed in phase space. Some people attempted to resolve these problems, even Einstein wrote a paper about it in 1917 \cite{stone_einsteins_2005}. However, time went by and it wasn't until the 70s when Gutzwiller work \cite{gutzwiller_periodic_1971} brought these issues into focus of lots of research that fell under the name of the title quantum chaos. Up to this day, nonetheless there many question that need solving, including a precise definition of what do we really mean by quantum chaos.
 
-The most crucial results that lay the foundation on which quantum chaos builds came from works of Wigner and Dyson \cite{wigner_characteristic_1955,wigner_characteristics_1957,wigner_distribution_1958,dyson_statistical_1962}. They developed a theory to help them understand the spectra of complex atomic nuclei, known as Random Matrix Theory (RMT) which became one of the cornerstones of modern physics. 
+The most crucial results that lay the foundation on which quantum chaos builds came from works of Wigner and Dyson \cite{wigner_statistical_1951,wigner_characteristic_1955,wigner_characteristics_1957,wigner_distribution_1958,dyson_statistical_1962}, with the help of Mehta \cite{mehta_statistical_1960}, Gaudin \cite{mehta_density_1960}, Porter \cite{porter_statistical_1965} and many others. They developed a theory to help them understand the spectra of complex atomic nuclei, known as Random Matrix Theory (RMT) and in an important discovery in 1984 \cite{bohigas_characterization_1984}, it was found that RMT was applicable to quantum chaotic systems, i.e, quantum systems whose classical counterparts are chaotic.
+The original idea that lead Wigner to this theory, was realizing that trying to predict exact energy levels and their corresponding eigenstates in complex systems was too difficult. Conversely, the correct approach was to study the statistical properties of said spectrum. Secondly, he also realised that if one looks into energy window sufficiently small, so that the density of states is approximately constant, then the Hamiltonian, in a general basis, would look essentially like a random matrix. Following this idea, then, if one studies the statistical properties of random matrices, subject to the symmetries of the Hamiltonian of interest, we could gain insight on the statistical properties of energy levels and eigenstates of complex systems.
 
-The original idea that lead Wigner to this theory, was realizing that trying to predict exact energy levels and their corresponding eigenstates in complex systems was too difficult. Conversely, the correct approach was to study the statistical properties of said spectrum. Secondly, he also realised that if one looks into energy window sufficiently small, so that the density of states is approximately constant, then the Hamiltonian, would look essentially like a random matrix. Following this idea, then, if one studies the statistical properties of random matrices (subject to the symmetries of the Hamiltonian of interest, such us for example time-reversal symmetry of the system, i.e unitarity of the evolution operator), we could gain insight on the statistical properties of energy levels and eigenstates of complex systems.
+This insight was very revolutionary and incredibly counter-intuitive. Let's just stop to think about it, when one try to diagonalize many-body physical Hamiltonians, one usually expresses it in a special basis in which the resulting matrix is simplified and its non-zero elements are anything but random. This, however does not go against Wigner's idea where one deals with a general basis.
 
-This insight was very revolutionary and incredibly counter-intuitive. Let's just stop to think about it
+In general, RMT deal with a general ensemble of matrices however, where the joint probability distribution (jdp) of the N-dimensional matrix elements of H (where H would be a realisation of this ensemble) would take the following form:
+
+\begin{equation}\LA{JPD_MATRIX}
+    P(A) = C\exp{\left[-\beta\text{tr}V(H)\right]},
+\end{equation}
+
+where V(H) is a positive-function of H, and C is the normalization constant \cite{pandey_quantum_2019}. However, for our purposes we consider the most extensively studied case, the Gaussian ensembles with $V(\xi)=\xi^2/4\upsilon^2$\footnote{This is of course a consequence of the central limit theorem}. This gives us the jdp of every single term, though as we are particularly interested in the eigenvalues of the matrix we can transform equation (\ref{JPD_MATRIX}), into the jpd of just the eigenvalues \cite{pandey_quantum_2019,martinez-azcona_decomposing_2025}:
+
+\begin{equation}\LA{JPD_EIGEN}
+    \rho_\beta\left(E_1,...,E_N\right) = C'\prod_{i<j}\left|E_i-E_j\right|^\beta \exp{\left[-\beta \sum_k V(E_k)\right]}
+\end{equation}
+
+Where, we are considering an unordered set of eigenvalues $\left\{E_k\right\}.$\footnote{Note that in general we will deal with Hamiltonians which are infinite dimensional and consequently have infinite, although countable, eigenvalues. However, as we already mentioned we are just gonna focus on small energy window.} Here, the $\beta$-parameter is also known as the Dyson index and controls the symmetries of the matrix we are considering and consequently differentiates between the 3 possible cases \cite{pandey_quantum_2019,dalessio_quantum_2016}:
+
+\begin{itemize}
+    \item Gaussian Orthogonal Ensemble (GOE, $\beta = 1$): In this ensemble the matrices are real and satisfy $H_{ij}=H_{ji}$. This type of Hamiltonians describe time-reversal invariant systems.
+    \item Gaussian Unitary Ensemble (GUE, $\beta = 2$): In this ensemble the matrices are complex and satisfy $H_{ij}=H_{ji}^*$. This type of Hamiltonians describe systems where time reversal is violated.
+    \item Gaussian Symplectic Ensemble (GSE, $\beta = 4$): In this ensemble the matrices are complex and satisfy $H_{ij}=J_{ik}H_{lk}J_{lj}$, where $J^{-1}$ is the symplectic matrix. This type of Hamiltonians describe time-reversal invariant, where the half-integer spin-rotation symmetry is broken.
+\end{itemize}
+
+\begin{figure}
+    \centering
+        \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[
+                axis equal,
+                width = 0.7\textwidth,
+                height = 0.4\textwidth,
+                xmin = -1.1,
+                xmax = 1.1,
+                ymin = 0,
+                xtick = {-1,-0.5,0,0.5,1},
+                samples = 200,
+                domain = -1:1,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=E,
+                ylabel=$\overline{\rho}(E)$]
+                \addplot+ [draw=black, mark=none,line width =1]
+                {2*(1-x^2)^(1/2)/2};
+            \end{axis}
+        \end{tikzpicture}
+    \caption{Wigner semicircle law that describes the average density of eigenvalues in a Gaussian random matrix ensemble considering $R=1$}\LA{SEMICIRCLE}
+\end{figure}
 
 
 
-\subsubsection{Level spacing distributions and spectral form factor}
+From the jpd in equation (\ref{JPD_EIGEN}), one can obtain the average density of eigenvalues, i.e the probability density of a single eigenvalue, which is defined as: 
+
+\begin{equation}
+    \overline{\rho}(E)=\int...\int \dd x_2...\dd x_N \rho_\beta(E,E_2,...,E_N)
+\end{equation}
+
+{\noindent This gives us the well-known Wigner's semicircle law, in the Gaussian case \cite{wigner_characteristic_1955} (See Figure \ref{SEMICIRCLE}):}
+
+\begin{equation}\LA{SEMICIRCLE_EQ}
+    \overline{\rho}(E) = \frac{2\sqrt{R^2-E^2}}{\pi R^2} ~~~~~ : ~~~~~ R^2 = 4\beta \upsilon^2 N
+\end{equation}
+
+\subsubsection{Level Spacing Distribution}
+
+Up until now, we have been just analyzing RMT as the mathematical theory it is. Let's now make a step further and consider the hypothesis that, as we already mentioned, says that the spectrum of Quantum Chaotic systems have the same statistics as the spectrum of random matrices of the Gaussian Ensemble. To attain this universality, we need to tweak the eigenvalues we are working with. This, \textquotedblleft tweaking \textquotedblright is known as unfolding, and is essentially a rescaling of the eigenvalues. What this procedures ensures is that the average spacing between consecutive eigenvalues becomes 1 in the whole spectrum. The unfolding function\footnote{Note that this is just the mean cumulative density} is defined by \cite{pandey_quantum_2019}:
+
+\begin{equation}\LA{UNF_FUNC}
+    F(E) = N \int_{-\infty}^E \overline{\rho}(E')\dd E',
+\end{equation}
+
+{\noindent ,where if we consider the Gaussian case, i.e, equation (\ref{SEMICIRCLE_EQ}), we obtain:}
+
+\begin{equation}
+    F(E) = \frac{N}{\pi R^2}\left[E\sqrt{R^2-E^2}+R^2\sin^{-1}\left(\frac{E}{R}\right)\right]
+\end{equation}
+
+Then, our new spectrum would be $\xi_k = F(E_k)$ (for our incoming purposes, after unfolding we are gonna sort the eigenvalues so that and relabel so that $\xi_1<...<\xi_N$). It can be easily seen that with this redefinition of the spectrum (considering that the eigenvalues are sufficiently close) the mean separation between closest levels will be:
+
+\begin{equation}
+    \frac{\dd\xi}{\dd E} = \rho(E) 
+\end{equation}
+
+{\noindent and then the closest level separation would be:}
+
+\begin{equation}
+    s = \xi_{i+1}-\xi_i = F(\xi_{i+1})-F(\xi_i) \approx (E_{i+1}-E_{i})\rho(E_i) \approx 1
+\end{equation}
+
+{\noindent where in the last step we have considered the definition of probability density if both eigenstates are \textquotedblleft sufficiently close\textquotedblright.}
+
+From this, now it can be calculated the closest neighbor spacing distribution $p_o(s)$, i.e, how the separation between closest neighbours is statistically distributed. The exact result was derived by Mehta \cite{mehta_random_2004}. However it is a really cumbersome expression that Wigner already proved that could be easily approximated just with the N=2 case (See Appendix \ref{HYPR}, for the derivation) \cite{wigner_statistical_1951}. The three different Gaussian ensembles are interpolated by the Wigner-Dyson distribution:
+
+\begin{equation}\LA{WGDY}
+    p_o(s) = a_\beta s^\beta \exp\left[-b_\beta s^2\right]
+\end{equation}
+
+{\noindent where:}
+
+\begin{equation}
+    a_\beta=2\frac{\Gamma\left[\frac{2+\beta}{2}\right]^{1+\beta}}{\Gamma\left[\frac{1+\beta}{2}\right]^{2+\beta}} ~~~~;~~~~ b_\beta=\frac{\Gamma\left[\frac{2+\beta}{2}\right]^{2}}{\Gamma\left[\frac{1+\beta}{2}\right]^{2}}
+\end{equation}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[width=0.7\textwidth,height=0.7*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot [
+                    green,
+                    line width =1,
+                    ]
+                table {etc/data/GOE.dat};
+                \addplot [
+                    blue,
+                    line width =1]
+                table {etc/data/GUE.dat};
+                \addplot [
+                    red,
+                    line width =1]
+                table {etc/data/GSE.dat};
+                \legend{GOE,GUE,GSE}
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Level spacing distributions of the GOE,GUE,GSE ensembles (Green, Blue, Red)}\LA{SEP_DIST}
+\end{figure}
+
+
+
+{\noindent So, then, if we consider each particular case substituting $\beta$ in equation (\ref{WGDY}) would be:}
+
+\begin{equation}
+    \begin{aligned}
+        p_0(s) &= \frac{\pi}{2}s\exp\left(-\frac{\pi}{4}s^2\right) , &\beta = 1 \text{ (GOE)}\\
+        p_0(s) &= \frac{32}{\pi^2}s^2\exp\left(-\frac{4}{\pi}s^2\right) , &\beta = 2 \text{ (GUE)}\\
+        p_0(s) &= \frac{2^{18}}{3^6\pi^3}s^4\exp\left(-\frac{64}{9\pi}s^2\right) , &\beta = 4 \text{ (GSE)}\\
+    \end{aligned}
+\end{equation}
+
+{\noindent which are plotted in Figure \ref{SEP_DIST}.}
+
+There is one last thing we need to consider. All the steps we have take so far have been over RMT, but what we want to do is to compare this statistics to the ones of our system of choice. But, if this is the case, how do we unfold the energy window we consider in our system, because in a general system we are not going to have a closed expression for $\overline{\rho}$, that we could insert in equation \ref{UNF_FUNC}. To do so, in our case we are gonna use a polynominal fitting. First of all we need to define a staircase function:
+
+\begin{equation}
+    F_{stair}(E) = \text{Number of eigenvalues}\leq E
+\end{equation}
+
+Then, we obtain a smooth fit with a nth degree polynomial $F_{fit}(E)\approx F_{stair}$ which is meant to capture the global trend in the spectrum, and consider the unfolded spectrum to be $\xi_i = F_{fit}(E_i)$. It is important to note that we need to consider a small n, because if n is too high we could overfit the spectrum capturing the noise of the realisation. In our case we have considered n=4.
+
+\subsubsection{Spectral Form Factor}
+
+
+
 
 \subsubsection{Krylov complexity for states}
 

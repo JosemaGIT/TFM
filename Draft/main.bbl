@@ -597,7 +597,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1532-2424}
-      \field{journaltitle}{Transport Theory and Statistical Physics}
+      \field{journaltitle}{Transport Theory and Statistical Physic}
       \field{month}{1}
       \field{number}{3}
       \field{title}{Invariant variation problems}
@@ -847,7 +847,7 @@
       \verb https://doi.org/10.1063/1.1665596
       \endverb
     \endentry
-    \entry{wigner_characteristic_1955}{article}{}{}
+    \entry{wigner_statistical_1951}{article}{}{}
       \name{author}{1}{}{%
         {{hash=b68c34c3f76a4c27126c15b8f7d72d08}{%
            family={Wigner},
@@ -864,6 +864,46 @@
       \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
       \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
       \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1469-8064, 0305-0041}
+      \field{journaltitle}{Mathematical Proceedings of the Cambridge Philosophical Society}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{On the statistical distribution of the widths and spacings of nuclear resonance levels}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{47}
+      \field{year}{1951}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{790\bibrangedash 798}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1017/S0305004100027237
+      \endverb
+    \endentry
+    \entry{wigner_characteristic_1955}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b68c34c3f76a4c27126c15b8f7d72d08}{%
+           family={Wigner},
+           familyi={W\bibinitperiod},
+           given={Eugene\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{fullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{bibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorbibnamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authornamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -907,7 +947,7 @@
       \strng{authornamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
       \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
       \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -951,7 +991,7 @@
       \strng{authornamehash}{b68c34c3f76a4c27126c15b8f7d72d08}
       \strng{authorfullhash}{b68c34c3f76a4c27126c15b8f7d72d08}
       \strng{authorfullhashraw}{b68c34c3f76a4c27126c15b8f7d72d08}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1028,6 +1068,424 @@
       \verb https://pubs.aip.org/jmp/article/3/1/140/453743/Statistical-Theory-of-the-Energy-Levels-of-Complex
       \endverb
     \endentry
+    \entry{mehta_statistical_1960}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2b105ea21486d433226bc3b61f710789}{%
+           family={Mehta},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b105ea21486d433226bc3b61f710789}
+      \strng{fullhash}{2b105ea21486d433226bc3b61f710789}
+      \strng{fullhashraw}{2b105ea21486d433226bc3b61f710789}
+      \strng{bibnamehash}{2b105ea21486d433226bc3b61f710789}
+      \strng{authorbibnamehash}{2b105ea21486d433226bc3b61f710789}
+      \strng{authornamehash}{2b105ea21486d433226bc3b61f710789}
+      \strng{authorfullhash}{2b105ea21486d433226bc3b61f710789}
+      \strng{authorfullhashraw}{2b105ea21486d433226bc3b61f710789}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0029-5582}
+      \field{journaltitle}{Nuclear Physics}
+      \field{month}{8}
+      \field{shortjournal}{Nuclear Physics}
+      \field{title}{On the statistical properties of the level-spacings in nuclear spectra}
+      \field{urlday}{17}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{18}
+      \field{year}{1960}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{395\bibrangedash 419}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/0029-5582(60)90413-2
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:/Users/josema/Zotero/storage/5XURB4JZ/0029558260904132.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0029558260904132
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0029558260904132
+      \endverb
+    \endentry
+    \entry{mehta_density_1960}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2b105ea21486d433226bc3b61f710789}{%
+           family={Mehta},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3cea8b8076a3c43081956dc8594aec10}{%
+           family={Gaudin},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{fullhash}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{fullhashraw}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{bibnamehash}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{authorbibnamehash}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{authornamehash}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{authorfullhash}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \strng{authorfullhashraw}{3b3d94ad2bd685024a5e1d5abc2b1d49}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An exact expression for the density of eigenvalues of a random-matrix is derived. When the order of the matrix becomes infinite, it can be seen very directly that it goes over to Wigner's “semi-circle law”.}
+      \field{day}{1}
+      \field{issn}{0029-5582}
+      \field{journaltitle}{Nuclear Physics}
+      \field{month}{8}
+      \field{shortjournal}{Nuclear Physics}
+      \field{title}{On the density of Eigenvalues of a random matrix}
+      \field{urlday}{17}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{18}
+      \field{year}{1960}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{420\bibrangedash 427}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/0029-5582(60)90414-4
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:/Users/josema/Zotero/storage/MNXN546P/0029558260904144.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0029558260904144
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0029558260904144
+      \endverb
+    \endentry
+    \entry{porter_statistical_1965}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f84bea861720737ed3b4b2722e42ee3}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Science \& Technology Books}%
+      }
+      \strng{namehash}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{fullhash}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{fullhashraw}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{bibnamehash}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{authorbibnamehash}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{authornamehash}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{authorfullhash}{1f84bea861720737ed3b4b2722e42ee3}
+      \strng{authorfullhashraw}{1f84bea861720737ed3b4b2722e42ee3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-12-562356-8}
+      \field{langid}{english}
+      \field{pagetotal}{576}
+      \field{shorttitle}{Statistical Theories of Spectra}
+      \field{title}{Statistical Theories of Spectra: Fluctuations}
+      \field{year}{1965}
+      \field{dateera}{ce}
+      \keyw{Science / Physics / Nuclear,Science / Spectroscopy \& Spectrum Analysis}
+    \endentry
+    \entry{bohigas_characterization_1984}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d0f24dd506b1e3e94847d145309bbb04}{%
+           family={Bohigas},
+           familyi={B\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d688b0bb873b8da862ca2d4b7a390b61}{%
+           family={Giannoni},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e2d431a0edad8f4e7f9afee0004c8e3c}{%
+           family={Schmit},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{fullhash}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{fullhashraw}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{bibnamehash}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{authorbibnamehash}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{authornamehash}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{authorfullhash}{7ee3f0811136e835b89ee22c280c29b1}
+      \strng{authorfullhashraw}{7ee3f0811136e835b89ee22c280c29b1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{1}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{1}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Characterization of Chaotic Quantum Spectra and Universality of Level Fluctuation Laws}
+      \field{urlday}{17}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{52}
+      \field{year}{1984}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.52.1
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/josema/Zotero/storage/H7S9GXG7/PhysRevLett.52.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.52.1
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.52.1
+      \endverb
+    \endentry
+    \entry{pandey_quantum_2019}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=1f4bab11c28a1316964a50228f5e8d62}{%
+           family={Pandey},
+           familyi={P\bibinitperiod},
+           given={Akhilesh},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aa23fdbaa60f8c786d5ec10af588ce42}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Avanish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5382c26fdafcbb94eb1c280d9fd3a2aa}{%
+           family={Puri},
+           familyi={P\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{fba5db0783babea87089a7e85bcdf465}
+      \strng{fullhash}{fba5db0783babea87089a7e85bcdf465}
+      \strng{fullhashraw}{fba5db0783babea87089a7e85bcdf465}
+      \strng{bibnamehash}{fba5db0783babea87089a7e85bcdf465}
+      \strng{authorbibnamehash}{fba5db0783babea87089a7e85bcdf465}
+      \strng{authornamehash}{fba5db0783babea87089a7e85bcdf465}
+      \strng{authorfullhash}{fba5db0783babea87089a7e85bcdf465}
+      \strng{authorfullhashraw}{fba5db0783babea87089a7e85bcdf465}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{number}{{arXiv}:1905.10596}
+      \field{title}{Quantum Chaotic Systems and Random Matrix Theory}
+      \field{urlday}{13}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1905.10596
+      \endverb
+      \verb{eprint}
+      \verb 1905.10596 [cond-mat]
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:/Users/josema/Zotero/storage/NV8N5G9N/Pandey et al. - 2019 - Quantum Chaotic Systems and Random Matrix Theory.pdf:application/pdf;Snapshot:/Users/josema/Zotero/storage/JGHD82CL/1905.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1905.10596
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1905.10596
+      \endverb
+      \keyw{Condensed Matter - Statistical Mechanics,Quantum Physics}
+    \endentry
+    \entry{martinez-azcona_decomposing_2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=860bd8604f81342b67b4b4b442d00d14}{%
+           family={Martinez-Azcona},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3562800709f9a93b15696ca2dea4c4a3}{%
+           family={Shir},
+           familyi={S\bibinitperiod},
+           given={Ruth},
+           giveni={R\bibinitperiod}}}%
+        {{hash=290014efab32a835eb3d643ce55705d2}{%
+           family={Chenu},
+           familyi={C\bibinitperiod},
+           given={Aurélia},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{fullhash}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{fullhashraw}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{bibnamehash}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{authorbibnamehash}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{authornamehash}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{authorfullhash}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \strng{authorfullhashraw}{7a58de6cc1abcaaf2188e1c3b375ca06}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2469-9950, 2469-9969}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{4}
+      \field{number}{16}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Decomposing the Spectral Form Factor}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{111}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{165108}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.111.165108
+      \endverb
+      \verb{eprint}
+      \verb 2311.09292 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/josema/Zotero/storage/KLSMTM27/Martinez-Azcona et al. - 2025 - Decomposing the Spectral Form Factor.pdf:application/pdf;Snapshot:/Users/josema/Zotero/storage/QJ39NFJW/2311.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2311.09292
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2311.09292
+      \endverb
+      \keyw{Condensed Matter - Statistical Mechanics,High Energy Physics - Theory,Mathematical Physics,Mathematics - Mathematical Physics,Nonlinear Sciences - Chaotic Dynamics,Quantum Physics}
+    \endentry
+    \entry{dalessio_quantum_2016}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a322c2c706511dc1bd3a43a9c137aecd}{%
+           family={D'Alessio},
+           familyi={D\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=93ccbd9c3086cdf9e8479123a9d65154}{%
+           family={Kafri},
+           familyi={K\bibinitperiod},
+           given={Yariv},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8ab550746db8549e7045b50a4798975c}{%
+           family={Polkovnikov},
+           familyi={P\bibinitperiod},
+           given={Anatoli},
+           giveni={A\bibinitperiod}}}%
+        {{hash=145e1c99debd158a634281ebd563ecd4}{%
+           family={Rigol},
+           familyi={R\bibinitperiod},
+           given={Marcos},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{effe01aa2f75391fd590794fef2fae6e}
+      \strng{fullhash}{323e24b1a43708dcdbcb495742f8a71a}
+      \strng{fullhashraw}{323e24b1a43708dcdbcb495742f8a71a}
+      \strng{bibnamehash}{effe01aa2f75391fd590794fef2fae6e}
+      \strng{authorbibnamehash}{effe01aa2f75391fd590794fef2fae6e}
+      \strng{authornamehash}{effe01aa2f75391fd590794fef2fae6e}
+      \strng{authorfullhash}{323e24b1a43708dcdbcb495742f8a71a}
+      \strng{authorfullhashraw}{323e24b1a43708dcdbcb495742f8a71a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{issn}{0001-8732, 1460-6976}
+      \field{journaltitle}{Advances in Physics}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{shortjournal}{Advances in Physics}
+      \field{title}{From quantum chaos and eigenstate thermalization to statistical mechanics and thermodynamics}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{65}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{239\bibrangedash 362}
+      \range{pages}{124}
+      \verb{doi}
+      \verb 10.1080/00018732.2016.1198134
+      \endverb
+      \verb{file}
+      \verb Submitted Version:/Users/josema/Zotero/storage/KBMW4Y4B/D'Alessio et al. - 2016 - From quantum chaos and eigenstate thermalization to statistical mechanics and thermodynamics.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.tandfonline.com/doi/full/10.1080/00018732.2016.1198134
+      \endverb
+      \verb{url}
+      \verb http://www.tandfonline.com/doi/full/10.1080/00018732.2016.1198134
+      \endverb
+    \endentry
+    \entry{mehta_random_2004}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e12cba02ea624fa40c0cd3accb65ca00}{%
+           family={Mehta},
+           familyi={M\bibinitperiod},
+           given={Madan\bibnamedelima Lal},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{fullhash}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{fullhashraw}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{bibnamehash}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{authorbibnamehash}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{authornamehash}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{authorfullhash}{e12cba02ea624fa40c0cd3accb65ca00}
+      \strng{authorfullhashraw}{e12cba02ea624fa40c0cd3accb65ca00}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{isbn}{978-0-08-047411-3}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{pagetotal}{707}
+      \field{title}{Random Matrices}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \keyw{Mathematics / Algebra / Linear}
+    \endentry
     \entry{tHooft:1984kcu}{article}{}{}
       \name{author}{1}{}{%
         {{hash=588b6b467d7db883ddb395b11d61e98e}{%
@@ -1044,8 +1502,8 @@
       \strng{authornamehash}{588b6b467d7db883ddb395b11d61e98e}
       \strng{authorfullhash}{588b6b467d7db883ddb395b11d61e98e}
       \strng{authorfullhashraw}{588b6b467d7db883ddb395b11d61e98e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nucl. Phys. B}
@@ -1087,8 +1545,8 @@
       \strng{authornamehash}{180ac8c7c76e3df5d2befc6ccb5b947d}
       \strng{authorfullhash}{180ac8c7c76e3df5d2befc6ccb5b947d}
       \strng{authorfullhashraw}{180ac8c7c76e3df5d2befc6ccb5b947d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-6382}

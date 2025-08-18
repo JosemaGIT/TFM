@@ -1,22 +1,23 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}Preliminaries}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Asymptotically de Sitter spacetimes}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Diagnostics of quantum chaos}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Level spacing distributions and spectral form factor}{6}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Krylov complexity for states}{6}{subsubsection.2.2.2}%
-\contentsline {section}{\numberline {3}de Sitter Black holes in Brickwall models}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Normal mode of probe scalar fields}{6}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}A warm-up: three-dimensional AdS black holes}{6}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Empty dS spacetime}{9}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Schwarzschild-dS black hole}{11}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Quantum chaos signatures with stretched \textit {cosmological} horizons}{11}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Level spacing distribution and spectral form factor}{11}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Krylov complexity}{11}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}On stretched \textit {black hole} horizons in dS black holes}{11}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}WKB approximation method}{11}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Perturbative method}{11}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Results}{11}{subsubsection.3.3.3}%
-\contentsline {section}{\numberline {4}Conclusions}{11}{section.4}%
-\contentsline {section}{\numberline {A}Mathematical Considerations}{12}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Hypergeometric Function}{12}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Modulus of $Q_1$, $P_2$ and $Q_2$}{12}{subsection.A.2}%
+\contentsline {subsection}{\numberline {2.2}Random Matrix Theory: Diagnostics of quantum chaos}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Level Spacing Distribution}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Spectral Form Factor}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Krylov complexity for states}{9}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3}de Sitter Black holes in Brickwall models}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Normal mode of probe scalar fields}{9}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}A warm-up: three-dimensional AdS black holes}{9}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Empty dS spacetime}{12}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Schwarzschild-dS black hole}{14}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Quantum chaos signatures with stretched \textit {cosmological} horizons}{14}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Level spacing distribution and spectral form factor}{14}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Krylov complexity}{14}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}On stretched \textit {black hole} horizons in dS black holes}{14}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}WKB approximation method}{14}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Perturbative method}{14}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Results}{14}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Conclusions}{14}{section.4}%
+\contentsline {section}{\numberline {A}Mathematical Considerations}{15}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Hypergeometric Function}{15}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Modulus of $Q_1$, $P_2$ and $Q_2$}{15}{subsection.A.2}%
