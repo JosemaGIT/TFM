@@ -85,6 +85,158 @@ This master thesis aims to used the techniques developed and the considerations 
 
 \section{Preliminaries}\LA{PRELIM}
 \subsection{Asymptotically de Sitter spacetimes}
+
+The study of asymptotically de Sitter spacetimes, i.e spacetimes which \textquotedblleft looks like\textquotedblright an exact de Sitter spacetime in a certain limit, is mostly motivated by the fact that different astrophysical probes suggests that our Universe is expanding at an acclerated rate, which indicates that our cosmological constant is small, but positive \cite{2013PhR...530...87W}. This then indicates that if our universe, although not exactly de Sitter is tending towards this state in the future, when matter would have sufficiently diluted \cite{PhysRevD.28.2118}. 
+
+Current measures of our cosmological constant not only indicates that it is positive but that it is too small, at least by current theoretical considerations. If one considers that the cosmological constant is the vacuum energy of the universe due to its matter and radiation content, then there exists a mismatch between theoretical prediction and observations by around 122 orders of magnitude. This constitute the worst fine-tuning problem of the history of physics, known as the cosmological constant problem.
+
+Insights in the quantum features of spacetime might provide us a way of addressing this discrepancy. However, several there are still several obstacle in our way that has prevented us from doing so. One of the main complications is that, obtaining universes with positive cosmological in string theory has proven to be a truly challenging task.
+
+Let's first review, the basic properties of the de Sitter (dS) spacetime. The dS spacetime, along with AdS and Minkowsky, is one of the three maximally symmetric spacetime, i.e which has the maximum number of allowed symmetries. The easiest way to visualize dS is through embedding. If we consider Minkowksi space time in (d + 2) dimensions $\calm^{d+2}$ with metric:
+
+\begin{equation}
+    ds^2_{\calm^{d+2}} = -\dd x_0^2 + ... + \dd x_{d+1}^2,
+\end{equation}
+
+{\noindent the $dS_{d+1}$ spacetime can be obtained as the hypersurface embedded in it, described by:}
+
+\begin{equation}\LA{DS}
+    -x_o^2+x_1^2+...+x_{d+1} = l^2
+\end{equation}
+
+{\noindent where $l$ defines the absulate scale in the $dS_{d+1}$ spacetime and is known as the cosmological horizon radius. This equation defines a hyperboloid in $\calm^{d+2}$, with its axis along the 0th direction. It is straightforward to see that the group that leaves unchanged (\ref{DS}) is the Lorentz group SO(d,1), which constitutes the group of isometries of $dS_{d+1}$. One key thing to note, that we will discuss later is that $SO(d+1,1)$ is isomorphic to the conformal group of the d-dimensional Eucliden space.}
+
+This spacetime satisfies Einstein's field equation,
+
+\begin{equation}
+    R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} + \Lambda g_{\mu\nu} = 0
+\end{equation}
+
+{\noindent with a positive curvature given by:}
+
+\begin{equation}
+    \Lambda = \frac{d(d-1)}{2l^2}
+\end{equation}
+
+This spacetime can be described by different coordinates. If we want to map the whole manifold we can make use of the \textbf{Global coordinates} $\{\tau,\theta_i\}$. This coordinates are related to the embedding coordinates by:
+
+\begin{equation}
+    \left\{
+        \begin{aligned}
+            X^0 &= l\sinh\tau\\
+            X^i &= l\cosh\tau \omega^i
+        \end{aligned}
+    \right.
+\end{equation}
+
+{\noindent where:}
+
+\begin{equation}
+    \begin{aligned}
+        \omega^1 &= \cos\theta_1,\\
+        \omega^2 &= \sin\theta_1\cos\theta_2,\\
+                 &\vdots\\
+        \omega^d &= \sin\theta_1...\sin\theta_{d-2}\cos\theta_{d},\\
+        \omega^{d+1} &= \sin\theta_1...\sin\theta_{d-2}\sin\theta_{d},\\
+    \end{aligned}
+\end{equation}
+
+{\noindent such that $\theta_i\in[0,\pi)$ for $1\leq i < d$ but $\theta_d\in[0,2\pi$ which constitute the coordinates of an $S^d$ sphere and $\tau\in(-\infty,+\infty)$. In this coordinates the metric takes the following form:}
+
+\begin{equation}
+    \frac{\dd s^2}{l^2} = -\dd\tau^2 + \cosh^2\tau \dd\Omega_d^2
+\end{equation}
+
+{\noindent, where $\dd \omega_d^2$ is the metric of the d-sphere $S^d$. For $\tau>0$ this metric gives us the usual visualisation of a bounded Universe whose size is expanding exponentially as time evolves forward.}
+
+This coordinates are not well fitted to study the causal structure of the dS. For such purpose we can define a conformal time $T$ such that:
+
+\begin{equation}
+    \cos T = \frac{1}{\cosh\tau} ~~~:~~~ T\in[-\pi/2,\pi/2]
+\end{equation}
+
+{\noindent so that the metric takes the following form:}
+
+\begin{equation}
+    \frac{\dd s^2}{l^2} = \frac{1}{\cos^2 T}\left(-\dd T^2 + \dd\theta_1^2 +\cos^2\theta_1\dd\Omega_{d-1}^2\right)
+\end{equation}
+
+This then allow us to represent the Penrose Diagram in Figure \ref{PENROSE}, where $I^\pm$ represents the infinite future and past respectively at $T=\pm\pi/2$ and we name $\theta_1=\pm \pi/2$ North and South pole respectively. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/PENROSE.eps}
+    \caption{Penrose diagram of the dS spacetime considering the timelike coordinate T in the vertical direction. A horizontal slice represents an $S^d$ and each point would be an $S^{d-1}$, with radius $1/\cos T$. The dashed lines represent the light rays that goes through the origin. Image taken from \cite{spradlin2001leshoucheslecturessitter}}
+    \label{PENROSE}
+\end{figure}
+
+Light rays travel at $45\degree$ so if one light ray is emitted from the north pole at infinite past the would only be able to reach the south pole in the infinite future. This is a clear indication of the fact that no single observer has access to the full spacetime. Consequently, we would like to have a set of coordinates that describe the region of $dS$ accessible to a single observer. This region would be the intersection between the region that can be affected by an observer. If we consider this observer being in the North Pole\footnote{Note that this is an arbitrary choice, the North Pole can be any horizontal slice just by reparametrization of the $\theta_1$ coordinate}, then this region would be the left triangle in Figure $\ref{PENROSE2}$ which we commonly refer to as the \textbf{Static Patch}.
+
+This region is described in terms of its own coordinates $\{t,r,\theta_i\}$ which are related to the embedding coordinates by:
+
+\begin{equation}
+    \left\{
+        \begin{aligned}
+            x^0 &= \sqrt{l^2-r^2}\sinh t, \\
+            x^i &= r\omega^i, ~~~~~\text{for }1\leq i <d+1,\\
+            x^{d+1} &= \sqrt{l^2-r^2}\cosh t,
+        \end{aligned}
+    \right.
+\end{equation}
+
+From which the dS metric takes the form of the so-called static patch metric:
+
+\begin{equation}
+    \dd s^2 = -(l^2-r^2)\dd t^2 + \frac{\dd r^2}{l^2-r^2} + r^2\dd\Omega^2_{d-1} ~~~~:~~~~ r\in[0,1)
+\end{equation}
+
+We can highlight several properties of this metric. First of all, as one can infer from the name, this metric is static, in the sense that it does not depend on the timelike coordinate, which implies that $\partial_t$ is a timelike Killing vector. Additionally, at $r=l$ we encounter the event horizon where the timelike Killing vectors become null. 
+
+It is noteworthy that, the appearance of the cosmological horizon is not a consequence of a certain accumulation of matter, the dS spacetime is a vacuum solution, or singularity, rather than the accelerated expansion of the dS spacetime and the finiteness of the speed of light. 
+
+Note that we have defined the static patch in terms of a particular observer. Consequently, each different observer would have a different cosmological horizon. This differs completely from BH event horizons, which is the same independently of the considered observer.
+
+\begin{figure}[ht]
+    \centering
+    \subcaptionbox{}
+    {
+    \includegraphics[width=0.3\linewidth]{figs/static_1.pdf}
+    }
+    \subcaptionbox{}
+    {
+    \includegraphics[width=0.3\linewidth]{figs/static_2.pdf}
+    }
+    \subcaptionbox{}
+    {
+    \includegraphics[width=0.3\linewidth]{figs/static_3.pdf}
+    }
+    \caption{The junction of the region that can affect the observer and the one that can be affected by the observer. Images taken from \cite{Galante:2023uyf}}\label{PENROSE2}
+\end{figure}
+
+This horizon, following from the study started in 1977 by Gibbons and Hawking \cite{PhysRevD.15.2738,PhysRevD.15.2752}, has a temperature and an entropy which must obey an area law. The temperature takes the following form which depends only on the cosmological horizon radius:
+
+\begin{equation}
+    T_{ds}=\frac{\hbar c}{2\pi k_B l}
+\end{equation}
+
+But, wouldn't this then imply that the cosmological horizon radiates and consequently would eventually evaporate? Considering that this cannot be the case in dS, it has to be the case that the Hawking radiation is in thermal equilibrium with its surrounding so that the overall energy exchange cancels out, similarly to the eternal BHs in AdS.
+
+The entropy is calculated following an semiclassical approach with the Eulidean path integral \cite{PhysRevD.15.2752}:
+
+\begin{equation}
+    Z = \int Dg \exp\left(-I_E[g]\right) ~~~;~~~ I_E[g] = -\frac{1}{16\pi G_N}\int d^4 x_E \sqrt{g}(R-2\Lambda)
+\end{equation}
+
+Where the Einstein-Hilbert action integral is performed over the Euclidean coordinates, i.e. $t_E=it$. As it is commonly known \cite{gibbons_path_1978}, the gravitational path integral diverges and is not well defined. However, by a saddle point approximation, using the on-shell action one can directly obtain the area law for the dS entropy\footnote{In the case of Schwarzschild BH for example for this process one needs to consider boundary and regularisation terms but not in this case. See the details in the Appendix A of \cite{Galante:2023uyf}}:
+
+\begin{equation}
+    S_{GH} = \frac{k_Bc^3A_H}{4\hbar G_N}
+\end{equation}
+
+However, what is the microscopic origin (if it really has one) of this formula. This area law also points towards considering a duality between dS and a certain field theory which would live on the horizon as in the case of AdS/CFT. Previously, I mentioned that the isometry group of $dS_{d+1}$ was the conformal group of $\mathds{R}^d$, which made the principal proposal for this field theory is to be an Euclidean CFT.
+
+Following from the existence of the cosmological horizon it has already been proposed that dS spacetimes must be fast scramblers \cite{Geng_2021} like black holes and must dilute information very fast. If this were to be the case, then the system must show signatures of Quantum Chaotic behaviour (See following section), which is what this work is going to probe.
+
 \subsection{Random Matrix Theory: Diagnostics of quantum chaos}
 
 From the classical point of view, although no universally accepted mathematical definition of Chaos exists, we have an intuitive senses of what it means. In a few words, we can say that a system is chaotic if it is \textquotedblleft very sensitive to initial conditions\textquotedblright. Although chaotic dynamics are that generic, thre is a class of systems 
@@ -118,13 +270,13 @@ The original idea that lead Wigner to this theory, was realizing that trying to 
 
 This insight was very revolutionary and incredibly counter-intuitive. Let's just stop to think about it, when one try to diagonalize many-body physical Hamiltonians, one usually expresses it in a special basis in which the resulting matrix is simplified and its non-zero elements are anything but random. This, however does not go against Wigner's idea where one deals with a general basis.
 
-In general, RMT deal with a general ensemble of matrices however, where the joint probability distribution (jdp) of the N-dimensional matrix elements of H (where H would be a realisation of this ensemble) would take the following form:
+In general, RMT deal with a general ensemble of matrices however, where the joint probability distribution (jpd) of the N-dimensional matrix elements of H (where H would be a realisation of this ensemble) would take the following form:
 
 \begin{equation}\LA{JPD_MATRIX}
     P(A) = C\exp{\left[-\beta\text{tr}V(H)\right]},
 \end{equation}
 
-where V(H) is a positive-function of H, and C is the normalization constant \cite{pandey_quantum_2019}. However, for our purposes we consider the most extensively studied case, the Gaussian ensembles with $V(\xi)=\xi^2/4\upsilon^2$\footnote{This is of course a consequence of the central limit theorem}. This gives us the jdp of every single term, though as we are particularly interested in the eigenvalues of the matrix we can transform equation (\ref{JPD_MATRIX}), into the jpd of just the eigenvalues \cite{pandey_quantum_2019,martinez-azcona_decomposing_2025}:
+where V(H) is a positive-function of H, and C is the normalization constant \cite{pandey_quantum_2019}. However, for our purposes we consider the most extensively studied case, the Gaussian ensembles with $V(\xi)=\xi^2/4\upsilon^2$\footnote{This is of course a consequence of the central limit theorem}. This gives us the jpd of every single term, though as we are particularly interested in the eigenvalues of the matrix we can transform equation (\ref{JPD_MATRIX}), into the jpd of just the eigenvalues \cite{pandey_quantum_2019,martinez-azcona_decomposing_2025}:
 
 \begin{equation}\LA{JPD_EIGEN}
     \rho_\beta\left(E_1,...,E_N\right) = C'\prod_{i<j}\left|E_i-E_j\right|^\beta \exp{\left[-\beta \sum_k V(E_k)\right]}
@@ -176,12 +328,14 @@ From the jpd in equation (\ref{JPD_EIGEN}), one can obtain the average density o
     \overline{\rho}(E) = \frac{2\sqrt{R^2-E^2}}{\pi R^2} ~~~~~ : ~~~~~ R^2 = 4\beta \upsilon^2 N
 \end{equation}
 
+Throughout this last section we addressed that the energy levels of chaotic systems follow a Wigner-Dyson distribution. But on the contrary, how are integrable systems characterized then? This was first addressed by Berry and Tabor in 1977 \cite{berry_level_1997}. In a few words, they just found that in integrable systems energy levels were uncorrelated, i.e, they should have a jpd of the same form as (\ref{JPD_EIGEN}) but without the productorium part. It would be just a multiplication of the different Gaussian distributions for each eigenvalue. This ensemble, is known as the \textit{Poisson} ensemble, a naming that can be better understood in the following section.
+
 \subsubsection{Level Spacing Distribution}
 
-Up until now, we have been just analyzing RMT as the mathematical theory it is. Let's now make a step further and consider the hypothesis that, as we already mentioned, says that the spectrum of Quantum Chaotic systems have the same statistics as the spectrum of random matrices of the Gaussian Ensemble. To attain this universality, we need to tweak the eigenvalues we are working with. This, \textquotedblleft tweaking \textquotedblright is known as unfolding, and is essentially a rescaling of the eigenvalues. What this procedures ensures is that the average spacing between consecutive eigenvalues becomes 1 in the whole spectrum. The unfolding function\footnote{Note that this is just the mean cumulative density} is defined by \cite{pandey_quantum_2019}:
+Up until now, we have been just analyzing RMT as the mathematical theory it is. Let's now make a step further and consider the hypothesis that, as we already mentioned, says that the spectrum of Quantum Chaotic systems have the same statistics as the spectrum of random matrices of the Gaussian Ensemble. To attain this universality, in the case of short range relations, we need to tweak the eigenvalues we are working with. This, \textquotedblleft tweaking \textquotedblright is known as unfolding, and is essentially a rescaling of the eigenvalues. What this procedures ensures is that the average spacing between consecutive eigenvalues becomes 1 in the whole spectrum. The unfolding function\footnote{Note that this is just the mean cumulative density} is defined by \cite{pandey_quantum_2019}:
 
 \begin{equation}\LA{UNF_FUNC}
-    F(E) = N \int_{-\infty}^E \overline{\rho}(E')\dd E',
+    F(E) = N\int_{-\infty}^E \overline{\rho}(E')\dd E',
 \end{equation}
 
 {\noindent ,where if we consider the Gaussian case, i.e, equation (\ref{SEMICIRCLE_EQ}), we obtain:}
@@ -193,18 +347,18 @@ Up until now, we have been just analyzing RMT as the mathematical theory it is. 
 Then, our new spectrum would be $\xi_k = F(E_k)$ (for our incoming purposes, after unfolding we are gonna sort the eigenvalues so that and relabel so that $\xi_1<...<\xi_N$). It can be easily seen that with this redefinition of the spectrum (considering that the eigenvalues are sufficiently close) the mean separation between closest levels will be:
 
 \begin{equation}
-    \frac{\dd\xi}{\dd E} = \rho(E) 
+    \frac{\dd\xi}{\dd E} = N\overline{\rho}(E) 
 \end{equation}
 
 {\noindent and then the closest level separation would be:}
 
 \begin{equation}
-    s = \xi_{i+1}-\xi_i = F(\xi_{i+1})-F(\xi_i) \approx (E_{i+1}-E_{i})\rho(E_i) \approx 1
+    s = \xi_{i+1}-\xi_i = F(\xi_{i+1})-F(\xi_i) \approx N(E_{i+1}-E_{i})\overline{\rho}(E_i) \approx 1
 \end{equation}
 
 {\noindent where in the last step we have considered the definition of probability density if both eigenstates are \textquotedblleft sufficiently close\textquotedblright.}
 
-From this, now it can be calculated the closest neighbor spacing distribution $p_o(s)$, i.e, how the separation between closest neighbours is statistically distributed. The exact result was derived by Mehta \cite{mehta_random_2004}. However it is a really cumbersome expression that Wigner already proved that could be easily approximated just with the N=2 case (See Appendix \ref{HYPR}, for the derivation) \cite{wigner_statistical_1951}. The three different Gaussian ensembles are interpolated by the Wigner-Dyson distribution:
+From this, now it can be calculated the closest neighbor spacing distribution $p_o(s)$, i.e, how the separation between closest neighbours is statistically distributed. The exact result was derived by Mehta \cite{mehta_random_2004}. However, this exact expression is a really cumbersome and Wigner already proved that could be easily approximated just with the N=2 case (See Appendix \ref{LSD}, for the derivation) \cite{wigner_statistical_1951}. The three different Gaussian ensembles are interpolated by the Wigner-Dyson distribution:
 
 \begin{equation}\LA{WGDY}
     p_o(s) = a_\beta s^\beta \exp\left[-b_\beta s^2\right]
@@ -216,7 +370,20 @@ From this, now it can be calculated the closest neighbor spacing distribution $p
     a_\beta=2\frac{\Gamma\left[\frac{2+\beta}{2}\right]^{1+\beta}}{\Gamma\left[\frac{1+\beta}{2}\right]^{2+\beta}} ~~~~;~~~~ b_\beta=\frac{\Gamma\left[\frac{2+\beta}{2}\right]^{2}}{\Gamma\left[\frac{1+\beta}{2}\right]^{2}}
 \end{equation}
 
-\begin{figure}[h]
+
+{\noindent So, then, if we consider each particular case substituting $\beta$ in equation (\ref{WGDY}) would be:}
+
+\begin{equation}
+    \begin{aligned}
+        p_0(s) &= \frac{\pi}{2}s\exp\left(-\frac{\pi}{4}s^2\right) , &\beta = 1 \text{ (GOE)}\\
+        p_0(s) &= \frac{32}{\pi^2}s^2\exp\left(-\frac{4}{\pi}s^2\right) , &\beta = 2 \text{ (GUE)}\\
+        p_0(s) &= \frac{2^{18}}{3^6\pi^3}s^4\exp\left(-\frac{64}{9\pi}s^2\right) , &\beta = 4 \text{ (GSE)}\\
+    \end{aligned}
+\end{equation}
+
+{\noindent which are plotted in Figure \ref{SEP_DIST}. The main important feature that the 3 ensemble share is the fact that this distribution goes to 0 at s=0. This is known as level repulsion. This is a signature of the correlations between the different energy levels.}
+
+\begin{figure}[ht]
     \centering
     \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[width=0.7\textwidth,height=0.7*7/10*\textwidth,
@@ -241,25 +408,48 @@ From this, now it can be calculated the closest neighbor spacing distribution $p
                     red,
                     line width =1]
                 table {etc/data/GSE.dat};
-                \legend{GOE,GUE,GSE}
+                \addplot [
+                    black,
+                    line width =1]
+                table {etc/data/POISSON.dat};
+                \legend{GOE,GUE,GSE,Poisson}
             \end{axis}
         \end{tikzpicture}
-        \caption{Level spacing distributions of the GOE,GUE,GSE ensembles (Green, Blue, Red)}\LA{SEP_DIST}
+        \caption{Level spacing distributions of the GOE,GUE,GSE and Poisson ensembles (Green, Blue, Red, Black)}\LA{SEP_DIST}
 \end{figure}
 
-
-
-{\noindent So, then, if we consider each particular case substituting $\beta$ in equation (\ref{WGDY}) would be:}
+This level repulsion will not be present in the \textit{Poisson}, i.e, the integrable, case. If we consider this ensemble, then the unfolded spectrum will take the following form:
 
 \begin{equation}
-    \begin{aligned}
-        p_0(s) &= \frac{\pi}{2}s\exp\left(-\frac{\pi}{4}s^2\right) , &\beta = 1 \text{ (GOE)}\\
-        p_0(s) &= \frac{32}{\pi^2}s^2\exp\left(-\frac{4}{\pi}s^2\right) , &\beta = 2 \text{ (GUE)}\\
-        p_0(s) &= \frac{2^{18}}{3^6\pi^3}s^4\exp\left(-\frac{64}{9\pi}s^2\right) , &\beta = 4 \text{ (GSE)}\\
-    \end{aligned}
+    \xi = F(E) = N \int_{-\infty}^E\exp{-\beta V(E)}\dd E'
 \end{equation}
 
-{\noindent which are plotted in Figure \ref{SEP_DIST}.}
+{\noindent and consequently the jpd of this new spectrum would be:}
+
+\begin{equation}
+    \widetilde{\rho}(\{\xi_1,...,\xi_N\}) \propto 1,
+\end{equation}
+
+{\noindent i.e, the unfolded spectrum would be uniformly distributed over the domain $[0,N]$. From this, now we can easily extract the level separation distribution. We just need to make the same considerations like in the problem of particle desintegration detection, where instead of time we consider energy level separation. Every energy level separation would be an independent and indentically distributed random variable on its own, and then the level separation distribution would be \textquotedblleft probability that a another energy level appears at a certain distance considering the constant probability that at a certain energy it exists an energy level\textquotedblright, i.e, the same we consider with particle detection, \textquotedblleft the probability that after after a certain time of having detected a desintegration, we detect another desintegration, considering that the probability that a desintegration occurs at a particular time is constant\textquotedblright. And then the distribution we must consider is the Poissonian (I hope this makes the naming of the ensemble clearer):}
+
+\begin{equation}
+    p_0(s)=\lambda e^{-\lambda s},
+\end{equation}
+
+{\noindent ,where if we keep following the analogy $\lambda$ is inverse of the \textquotedblleft mean time between desintegrations\textquotedblright, and as we want the mean separation between levels to be one, we need to fix $\lambda=1$. This distribution is also plotted in Figure \ref{SEP_DIST}. It is obvious, as I already mentioned, that level repulsion is no present in this case, which is something to be expected as the premise of this ensemble was that each energy level had no correlation whatsoever.}
+
+In our system as is the case in \cite{Jeong_2025} we expect to have a parameter that if we vary continuously will transition our system from different stages of chaos to integrability. Wigner-Dyson distribution in equation (\ref{WGDY}) as we already discussed interpolates the three different distributions of the GOE, GUE and GSE, ensembles. However, we need a distribution that interpolates between this chaotic ensembles and the Poisson ensemble. To do so, we can make use of the Brody \cite{brody_statistical_1973} distribution that can interpolate between GOE and Poisson:
+
+\begin{equation}
+    p_o(s) = a_\beta s^\beta \exp\left[-b_\beta s^2\right]
+\end{equation}
+
+{\noindent where, the different parameters are defined by:}
+
+\begin{equation}
+    a_\beta=(1+\beta)\Gamma\left[\frac{2+\beta}{1+\beta}\right]^{1+\beta} ~~~~;~~~~ b_\beta=\Gamma\left[\frac{2+\beta}{1+\beta}\right]^{(1+\beta)}
+\end{equation}
+
 
 There is one last thing we need to consider. All the steps we have take so far have been over RMT, but what we want to do is to compare this statistics to the ones of our system of choice. But, if this is the case, how do we unfold the energy window we consider in our system, because in a general system we are not going to have a closed expression for $\overline{\rho}$, that we could insert in equation \ref{UNF_FUNC}. To do so, in our case we are gonna use a polynominal fitting. First of all we need to define a staircase function:
 
@@ -267,20 +457,120 @@ There is one last thing we need to consider. All the steps we have take so far h
     F_{stair}(E) = \text{Number of eigenvalues}\leq E
 \end{equation}
 
-Then, we obtain a smooth fit with a nth degree polynomial $F_{fit}(E)\approx F_{stair}$ which is meant to capture the global trend in the spectrum, and consider the unfolded spectrum to be $\xi_i = F_{fit}(E_i)$. It is important to note that we need to consider a small n, because if n is too high we could overfit the spectrum capturing the noise of the realisation. In our case we have considered n=4.
+Then, we obtain a smooth fit with a nth degree polynomial $F_{fit}(E)\approx F_{stair}(E)$ which is meant to capture the global trend in the spectrum, and consider the unfolded spectrum to be $\xi_i = F_{fit}(E_i)$. It is important to note that we need to consider a small n, because if n is too high we could overfit the spectrum capturing the noise of the realisation. In our case we have considered $n=4$.
 
 \subsubsection{Spectral Form Factor}
 
+The previous Quantum Chaos probe we talked about, level separation density, dealt with short-range correlation, i.e, how the different energy levels that are close together affect one another. On the other hand, the following probe we are going to consider, captures the correlations between energy levels over a wide range of scales. The spectral form factor is defined from an analytical extension of the partition function
 
+\begin{equation}
+    SFF = \frac{\left|Z(\beta,t)\right|^2}{|Z(\beta,0)|^2} ~~~~:~~~~ Z(\beta,t) = \text{Tr}\left[e^{-(\beta-it)H}\right]
+\end{equation}
+
+{\noindent where $\beta$, t and H are the inverse temperature (which we will always consider equal to 0), time, and the Hamiltonian for a given quantum mechanical system, respectively. Note that we can then express this in terms of the energy eigenvalues of the Hamiltonian:}
+
+\begin{equation}
+    Z(\beta,t) = \sum_\omega e^{-(\beta-it)\omega}
+\end{equation}
+
+Previous work \cite{cotler_black_2017,PhysRevE.55.4067,Martinez_Azcona_2025} have already proven that in the SFF of RMT and other known chaotic systems one encounter three stages , firstly a dip, then a \textquotedblleft linear ramp \textquotedblright with an approximate slope of 1 on a log-log plot and a saturation point where the SFF becomes constant known as the plateau. This dip-ramp-plateau behaviour is conjectured to be another universal property of quantum chaotic systems.
+
+On the other hand, if the system is integrable we expect the SFF to have a dip and a plateau but lack a ramp.
 
 
 \subsubsection{Krylov complexity for states}
+
+Apart from the previous more traditional diagnostics, which have been used for a long time, recently Krylov complexity has arisen as a modern tool proposed for probing quantum chaos \cite{Balasubramanian_2022,Parker_2019} most notably again in the context of RMT and also applied to known quantum chaotic systems. Krylov complexity quantifies the spread of a quantum state over a certain subspace of the Hilbert space generated by the Krylov basis. This basis is generated through an algorithm known as Lanczos algorithm, that I will briefly introduce in this section. This new probe offers a complementary perspective to spectral measures and enhances our understanding of quantum chaos.
+
+I will explain how the Krylov basis is constructed following closely the introductory part in \cite{Jeong_2025} which briefly reviews the procedure which is detailed in \cite{Balasubramanian_2022}. If you consider a Hamiltonian system, its dynamic will be governed by the Schrödinger equation:
+
+\begin{equation}
+    i\partial_t\ket{\psi(t)} = \hat{H}\ket{\psi(t)}
+\end{equation}
+
+This equation is solved using the time-evolution operatior, so you can express the solution as $\ket{\psi(t)}=e^{-iHt}\ket{\psi(0)}$. This can be represent in terms of a power series:
+
+\begin{equation}
+    \ket{\psi(t)}=\sum_{n=0}^\infty \frac{(-it)^n}{n!}\ket{\psi_n} ~~~~;~~~~ \ket{\psi_n} = \hat{H}^n\ket{\psi(0)}
+\end{equation}
+
+The states $\ket{\psi_n}$ span a subspace of the full Hilbert space known as the Krylov space. However, in general, they are not orthonormal. To construct a proper orthonormal basis of this Krylov space, which we will refer to as the Krylov basis $\ket{K_n}$, we employ the Lanczos algorithm \cite{lanczos_iteration_1950}:
+
+\begin{equation}
+    \ket{A_{n+1}} = (\hat{H}-a_n)\ket{K_n}-b_n\ket{K_{n-1}}
+\end{equation}
+
+{\noindent where this $a_n$ and $b_n$ are known as the Lanczos coefficients and are given as:}
+
+\begin{equation}
+    a_n = \bra{K_n}\hat{H}\ket{K_n} ~~,~~ b_n = \langle A_n | A_n \rangle^{1/2}
+\end{equation}
+
+We also need to define the initial conditions and normalization of the Krylov basis:
+
+\begin{equation}\LA{COND}
+    \ket{K_0} = \ket{\psi(0)}, ~~~ \ket{K_n} = b_n^{-1}\ket{A_n}, ~~~ b_0=0,
+\end{equation}
+
+{\noindent which implies that the Lanczos algorithm can be rewritten as:}
+
+\begin{equation}\LA{LANCZOS}
+    \hat{H}\ket{K_n} = a_n\ket{K_n}+b_{n+1}\ket{K_{n+1}}+b_n\ket{K_{n-1}}
+\end{equation}
+
+{\noindent where the Lanczos algorithm terminates for n so that $b_n=0$}
+
+With this formulation, you can directly see, that in the Krylov basis the Hamiltonian acquires a tri-diagonal representation:
+
+\begin{equation}
+    \bra{K_m}\hat{H}\ket{K_m} = a_n\delta_{m,n} + b_{n+1}\delta_{m,n+1} + b_n\delta_{m,n-1}
+\end{equation}
+
+Once we have obtained this orthonormal basis we can express the solution in terms of it:
+
+\begin{equation}
+    \ket{\psi(t)} = \sum_n\psi_n(t)\ket{K_n} ~~~~:~~~~ \psi_n(t) = \langle K_n|\psi(t)\rangle
+\end{equation}
+
+{\noindent, such that by the normalization condition:}
+
+\begin{equation}
+    \sum_n\left|\psi_n(t)\right|^2 = 1
+\end{equation}
+
+With this expansion in the Krylov basis one can transform equation (\ref{LANCZOS}) in effectivly a particle hopping in a one-dimensiona chain:
+
+\begin{equation}
+    i\partial_t\psi_n(t) = a_n\psi_n(t) + b_{n+1}\psi_{n+1}(t) + b_n\psi_{n-1}(t)
+\end{equation}
+
+If you solve this equation, with the initial state we specified in (\ref{COND}), i.e, $\psi_n(0) = \delta_{n0}$, Krylov complexity is then defined as:
+
+\begin{equation}
+    C(t)=\sum_n n\left|\psi_n(t)\right|^2
+\end{equation}
+
+which quantifies how our initial state that we have specified to be the 0th component of the Krylov basis spreads along the whole basis. For the initial state we use the same as both papers we are following \cite{Jeong_2025,Balasubramanian_2022}, the thermofield double state, that deal with two identical copies of the system at hand:
+
+\begin{equation}
+    \ket{\psi(0)} = \frac{1}{\sqrt{Z(\beta,0)}}\sum_n e^{-\frac{\beta E_n}{2}} \ket{n}\otimes\ket{n} ~~~:~~~ \hat{H} \ket{n} = E_n\ket{n}
+\end{equation}
+
+In the cases where the system we are considering presents chaotic behaviour we expect to observe a characteristic linear ramp, followed by a peak, a downward slope, and a plateau. This plateau at late times is directly related with the SFF at infinite temperature, i.e $\beta=0$ \cite{Erdmenger_2023}:
+
+\begin{equation}
+    \lim_{T\rightarrow\infty}\frac{1}{T}\int_0^T SFF(t)\dd t = \frac{1}{1+2C(t\rightarrow\infty)},
+\end{equation}
+
+{\noindent where d is the size of the Hamiltonian. Then at late times, the Krylov complexity will asymptotically tend to $C(t\rightarrow)\approx\frac{d-1}{2}$}
+
+What we expect from our system is that in the chaotic cases we obtain the four stage behaviour that I already mentioned, whereas in the integrable case the peak would disappear, as this peak is proposed as a hallmark of quantum chaos.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{de Sitter Black holes in Brickwall models}\LA{deSitter_BH}
+\section{de Sitter spacetimes in Brickwall models}\LA{deSitter_BH}
 
 It was Gerard 't Hooft, who first introduced the Brickwall model \cite{tHooft:1984kcu}, as an elementary exercise to arrive at the entropy of a BH following an statistical mechanics perspective. As we already discussed in the introduction, GR \textquotedblleft breaks\textquotedblright~  at the event horizon of a BH as well as at the cosmological horizon of dS spacetimes, which means that we cannot predict how a field that propagates within those spacetimes works at those exact points. However, nothing prevents us from getting arbitrarily close to this horizon.
 
@@ -371,7 +661,7 @@ Once we have specified this, we can consider our \textit{Brickwall} boundary con
     P_1 = 1 ~~~~~~ ; ~~~~~~ Q_1 = - \frac{\Gamma\left[1-\frac{i}{2}(J-\w)\right]\Gamma\left[1+\frac{i}{2}(J+\w)\right]\Gamma[1-i\w]}{\Gamma\left[1+\frac{i}{2}(J-\w)\right]\Gamma\left[1-\frac{i}{2}(J+\w)\right]\Gamma[1+i\w]}
 \end{equation}
 
-{\noindent and where can check (see Appendix \ref{HYPR}) that $\left|Q_1\right|=1$
+{\noindent and where can check (see Appendix \ref{MODULUSAPEN}) that $\left|Q_1\right|=1$
 
 Moreover we can parametrize the boundary condition as in \cite{Jeong_2025,Das_2023,das2023fuzzballsrandommatrices}:
 
@@ -419,7 +709,7 @@ In the end then, we just need to specify the values of $\lambda_J$ and $\mu_J$ a
     \centering
     \subcaptionbox{$\sigma_0=0$}
     {
-        \begin{tikzpicture}
+        \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[
                 width=0.44\textwidth,
                 height=5.5cm,
@@ -444,9 +734,10 @@ In the end then, we just need to specify the values of $\lambda_J$ and $\mu_J$ a
             \end{axis}
         \end{tikzpicture}
     }
+    \hspace{1.7cm}
     \subcaptionbox{$\sigma_0=2$}
     {
-        \begin{tikzpicture}
+        \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[
                 width=0.44\textwidth,
                 height=5.5cm,
@@ -545,7 +836,7 @@ Again, once we have specified this, we can apply the Brickwall boundary conditio
     \end{gathered}
 \end{equation}
 
-{\noindent and where we can check (see Appendix \ref{HYPR}) that $\abs{Q_2}=\abs{P_2}$. }
+{\noindent and where we can check (see Appendix \ref{MODULUSAPEN}) that $\abs{Q_2}=\abs{P_2}$. }
 
 Lastly, using a similar parametrization to the one on the previous subsection we can rearrange equation (\ref{STATIC_BOUNDARY}) and write:
 
@@ -580,7 +871,7 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
     \centering
     \subcaptionbox{$\sigma_0=0$}
     {
-        \begin{tikzpicture}
+        \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[
                 width=0.44\textwidth,
                 height=5.5cm,
@@ -605,9 +896,10 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
             \end{axis}
         \end{tikzpicture}
     }
+    \hspace{1.7cm}
     \subcaptionbox{$\sigma_0=2$}
     {
-        \begin{tikzpicture}
+        \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[
                 width=0.44\textwidth,
                 height=5.5cm,
@@ -639,7 +931,6 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
 %%
 %%}{\Gamma\left[\frac{l+i\w}{2}\right]\Gamma\left[\frac{d+l+i\w}{2}\right]\Gamma\left[-i\omega\right]}
 
-\subsubsection{Schwarzschild-dS black hole}
 \subsection{Quantum chaos signatures with stretched \textit{cosmological} horizons}
 \subsubsection{Level spacing distribution and spectral form factor}
 \begin{figure}[ht]
@@ -859,9 +1150,6 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
         \caption{Krylov complexity of the normal modes when $\sigma=0,~ 0.017,~ 0.024,~ 0.030,~ 0.5$ (black, red, blue, green, black)}
 \end{figure}
 
-\subsection{On stretched \textit{black hole} horizons in dS black holes}
-\subsubsection{WKB approximation method}
-\subsubsection{Perturbative method}
 \subsubsection{Results}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -878,9 +1166,9 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
 
 \appendix
 
-\section{Mathematical Considerations}\LA{HYPR}
+\section{Level Separation Distribution of the GOE Ensemble in \texorpdfstring{$2\times 2$}{TEXT} case}\LA{LSD}
 
-\subsection{Hypergeometric Function}
+\section{Hypergeometric Function}\LA{HYPR}
 
 The solutions to scalar field normal modes in equations (\ref{SOL_BTZ}), (\ref{SOL_STATIC}) are written in terms of the hypergeometric function $\hypr(a,b;c;z)$ which is defined as:
 
@@ -899,7 +1187,7 @@ The solutions to scalar field normal modes in equations (\ref{SOL_BTZ}), (\ref{S
         \right.
 \end{equation}
 
-\subsection{Modulus of \texorpdfstring{$Q_1$}{TEXT}, \texorpdfstring{$P_2$}{TEXT} and \texorpdfstring{$Q_2$}{TEXT}}
+\section{Modulus of \texorpdfstring{$Q_1$}{TEXT}, \texorpdfstring{$P_2$}{TEXT} and \texorpdfstring{$Q_2$}{TEXT}}\LA{MODULUSAPEN}
 
 During Section \ref{deSitter_BH} we define the quantities:
 
