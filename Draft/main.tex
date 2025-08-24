@@ -233,11 +233,11 @@ Where the Einstein-Hilbert action integral is performed over the Euclidean coord
     S_{GH} = \frac{k_Bc^3A_H}{4\hbar G_N}
 \end{equation}
 
-However, what is the microscopic origin (if it really has one) of this formula. This area law also points towards considering a duality between dS and a certain field theory which would live on the horizon as in the case of AdS/CFT. Previously, I mentioned that the isometry group of $dS_{d+1}$ was the conformal group of $\mathds{R}^d$, which made the principal proposal for this field theory is to be an Euclidean CFT.
+However, what is the microscopic origin (if it really has one) of this formula. This area law also points towards considering a duality between dS and a certain field theory which would live on the horizon as in the case of AdS/CFT. Previously, I mentioned that the isometry group of $dS_{d+1}$ was the conformal group of $\mathds{R}^d$, which made the principal proposal for this field theory to be an Euclidean CFT.
 
 Following from the existence of the cosmological horizon it has already been proposed that dS spacetimes must be fast scramblers \cite{Geng_2021} like black holes and must dilute information very fast. If this were to be the case, then the system must show signatures of Quantum Chaotic behaviour (See following section), which is what this work is going to probe.
 
-\subsection{Random Matrix Theory: Diagnostics of quantum chaos}
+\subsection{Random Matrix Theory: Diagnostics of quantum chaos}\LA{RMT_SECT}
 
 From the classical point of view, although no universally accepted mathematical definition of Chaos exists, we have an intuitive senses of what it means. In a few words, we can say that a system is chaotic if it is \textquotedblleft very sensitive to initial conditions\textquotedblright. Although chaotic dynamics are that generic, thre is a class of systems 
 for which dynamics are not chaotic, known as integrable systems. Indeed, if we consders a classical system with N degrees of freedom with a Hamiltonian in terms of cannonical coordinates and momenta $H(\mathbf{p},\mathbf{q})$, one can say that this system is integrable if it has as many functionally independent conserved quantities $\mathbf{I}=\left(I_1,...,I_N\right)$ as degrees of freedom. This can be expressed as:
@@ -440,7 +440,7 @@ This level repulsion will not be present in the \textit{Poisson}, i.e, the integ
 
 In our system as is the case in \cite{Jeong_2025} we expect to have a parameter that if we vary continuously will transition our system from different stages of chaos to integrability. Wigner-Dyson distribution in equation (\ref{WGDY}) as we already discussed interpolates the three different distributions of the GOE, GUE and GSE, ensembles. However, we need a distribution that interpolates between this chaotic ensembles and the Poisson ensemble. To do so, we can make use of the Brody \cite{brody_statistical_1973} distribution that can interpolate between GOE and Poisson:
 
-\begin{equation}
+\begin{equation}\LA{BRODYDIST}
     p_o(s) = a_\beta s^\beta \exp\left[-b_\beta s^2\right]
 \end{equation}
 
@@ -463,7 +463,7 @@ Then, we obtain a smooth fit with a nth degree polynomial $F_{fit}(E)\approx F_{
 
 The previous Quantum Chaos probe we talked about, level separation density, dealt with short-range correlation, i.e, how the different energy levels that are close together affect one another. On the other hand, the following probe we are going to consider, captures the correlations between energy levels over a wide range of scales. The spectral form factor is defined from an analytical extension of the partition function
 
-\begin{equation}
+\begin{equation}\LA{SFF}
     SFF = \frac{\left|Z(\beta,t)\right|^2}{|Z(\beta,0)|^2} ~~~~:~~~~ Z(\beta,t) = \text{Tr}\left[e^{-(\beta-it)H}\right]
 \end{equation}
 
@@ -869,7 +869,7 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
 
 \begin{figure}
     \centering
-    \subcaptionbox{$\sigma_0=0$}
+    \subcaptionbox{$\sigma_0=0$\LA{NORMAL_STATIC_a}}
     {
         \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[
@@ -897,7 +897,7 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
         \end{tikzpicture}
     }
     \hspace{1.7cm}
-    \subcaptionbox{$\sigma_0=2$}
+    \subcaptionbox{$\sigma_0=2$\LA{NORMAL_STATIC_b}}
     {
         \begin{tikzpicture}[trim axis left, trim axis right]
             \begin{axis}[
@@ -932,8 +932,64 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
 %%}{\Gamma\left[\frac{l+i\w}{2}\right]\Gamma\left[\frac{d+l+i\w}{2}\right]\Gamma\left[-i\omega\right]}
 
 \subsection{Quantum chaos signatures with stretched \textit{cosmological} horizons}
-\subsubsection{Level spacing distribution and spectral form factor}
+
+Once we have obtained the normal modes of our system of interest, the dS Static Patch. We can extract its statistical properties that could show signatures of quantum chaos as we mentioned on Section \ref{RMT_SECT}.
+
+\subsubsection{Level spacing distribution and spectral form factor}\LA{LSD_SFF}
+
+The first thing we are going to analyze is the level spacing distribution. However, there is one main complication we should face: the statistical nature of our model. Let's say that we consider one realisation of our model, and we obtain a cloud of points like the ones on Figure \ref{NORMAL_STATIC_b} following the tendency of Figure \ref{NORMAL_STATIC_a}. If we now unfold this spectrum and calculate the level spacing between each level and make a histogram out of it, we may obtain for example the results on Figure \ref{NOT_AVERAGE_HISTO}. Although one particular realisation might show the overall tendency and mean behaviour, statistical noise will appear. This is the issue that the histograms in \cite{Jeong_2025,das2023fuzzballsrandommatrices,Das_2023} faces.
+
 \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, black!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM0.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Not averaged histogram of the level spacing distribution of our de Sitter Static Patch Brickwall model using $\sigma_0=$}\LA{NOT_AVERAGE_HISTO}
+\end{figure}
+
+My personal proposal was to consider several realisations of the model and average the number of counts on each bin so that we could obtain the overall tendency and mitigate the noise. With that taken into account we can use this averaged histograms to fit the distribution functions in Equations (\ref{WGDY}) and (\ref{BRODYDIST}) while we vary the value of $\sigma_0$\footnote{Same procedure that is performed in Appendix B of \cite{Jeong_2025} for the BTZ case}, and obtain Figure \ref{BETA-SIGMA}. Here we can observe that similarly to what happened in the BTZ case, $\sigma_0$ parameter allow us to transition between the different kind of Chaotic Ensemble and asymptotically lead to a perfectly Poissonian Ensemble.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+            \begin{axis}[width=0.8\textwidth,height=0.8*7/10*\textwidth,
+                ymin=0,
+                xmin=0,
+                xlabel=$\sigma_0$,
+                ylabel=$\beta$,
+                y label style = {rotate = -90},
+                scaled ticks = false,
+                xtick={0, 0.05,0.1,0.15,0.20,0.25},
+                minor x tick num = 8,
+                minor y tick num = 8]
+                \addplot+ [orange!70!white]
+                table {etc/data/BETA_SIGMA0_d2_Brody.dat};
+                \addplot+ [blue!70!white]
+                table {etc/data/BETA_SIGMA0_d3_Brody.dat};
+                \addplot+ [green!70!white] 
+                table {etc/data/BETA_SIGMA0_d4_Brody.dat};
+            \end{axis}
+        \end{tikzpicture}
+
+    \caption{Relation between the $\beta$ parameter of RMT and the $\sigma_0$ parameter of our model, where we can observer the transition between the different types of Chaotic Systems (a) and the transition between Chaos and Integrability (b). We have considered $d=2,3,4$}\LA{BETA-SIGMA}
+\end{figure}
+
+This fitting has been performed for different dimensions, particularly $d=2,3,4$ and no apparent dependence has been observed. Considering this and taking into account our Universe lives on 3 spatial dimensions, from now on we will only consider the $d=3$ case. From this plot, we can extract 5 noticeable cases which I have plotted on Figure \ref{FIVE-CASES}.
+
+These cases ranges from $\sigma_0=0$, where the level spacing distribution has a delta like behaviour, which could be understood as an \textit{extreme} version of level repulsion and the Wigner-Dyson distribution\footnote{As mentioned in \cite{das2023fuzzballsrandommatrices}}; to $\sigma_0=0.017,0.024,0.030$ where the system shows a GSE, GUE, GOE behaviour respectivley; and ending with $\sigma_0=0.5$ where our system shows a clear Poissonian behaviour. However, it is noticeable to mention that in the Chaotic cases the level repulsion is not absolute, there is an undesirable bump near the horizon of the histograms.
+
+\begin{figure}[h]
     \centering
     \subcaptionbox{$\sigma_0=0$ (Delta-like)\vspace*{.25cm}}
     {
@@ -1041,8 +1097,33 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
             \end{axis}
         \end{tikzpicture}
     }
-    \caption{Level spacing distributions of the normal modes, considering a disorder average. The solid lines are given by their respective analytic distribution}
+    \caption{Level spacing distributions of the normal modes, considering a disorder average. The solid lines are given by their respective analytic distribution}\LA{FIVE-CASES}
 \end{figure}
+
+If we now turn our attention towards the Spectral Form Factor, we face once again the problem of the statistical nature of our model. One could think that if we consider a large enough number of modes of equation (\ref{SFF}) we could obtain an averaged behaviour, i.e that it would "self-average" itself. However, it was already proven in \cite{Prange_1997} that the SFF is \textquotedblleft\textit{Not self-averaging}\textquotedblright, so that if you consider just one realisation of our system you would obtain Figure \ref{SFF-not-averaged}, where the statistical noise is really dominant.
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[trim axis left, trim axis right]
+            \begin{axis}[ybar,width=0.45\textwidth,height=0.45*7/10*\textwidth,
+                xmin=-0.05,
+                xmax=4.05,
+                ymin=0,
+                xtick pos=bottom,
+                ytick pos=left,
+                xlabel=s,
+                ylabel=p(s),
+                y label style = {rotate = -90}]
+                \addplot+ [bar width=0.1, black!50!white, draw=black]
+                table {etc/data/STATIC_HISTOGRAM0.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Not averaged histogram of the level spacing distribution of our de Sitter Static Patch Brickwall model using $\sigma_0=$}\LA{SFF-not-averaged}
+\end{figure}
+
+To mitigate this noise we can once again just consider several realisations and disorder-average it. With this taken into account, one can obtain the SFFs on Figure \ref{SFF-Averaged} where we have considered the same noticeable case we have already mentioned.
+
+On the three chaotic cases, we obtained the expected dip-ramp-plateau behaviour we talked about on Section \ref{LSD_SFF}. If we turn our attention towards the $\sigma_0=0$ case, we also obtain this same behaviour even though, as we saw on Figure \ref{FIVE-CASES}, the level spacing distribution is not comparable to any ensemble of RMT. This suggests, equivalently to what happened on the BTZ case (See \cite{Jeong_2025}), that the linear ramp and the level repulsion may have an independent meaning, rather than being simply connected through RMT. Lastly on the integrable case, with $\sigma_0=0.5$ one obtains the expected disappearance of the ramp phase.
 
 \begin{figure}[ht]
     \centering
@@ -1116,10 +1197,12 @@ This relation, analogously to what we discussed about equation \ref{QUANTIZATION
             \end{loglogaxis}
         \end{tikzpicture}
     } 
-    \caption{Spectral Form Factor of the scalar fields considering a disorder-average}
+    \caption{Spectral Form Factor of the scalar fields considering a disorder-average}\LA{SFF-Averaged}
 \end{figure}
 
 \subsubsection{Krylov complexity}
+
+
 
 \begin{figure}[ht]
     \centering

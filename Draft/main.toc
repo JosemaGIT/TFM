@@ -11,9 +11,9 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Empty dS spacetime}{19}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Quantum chaos signatures with stretched \textit {cosmological} horizons}{21}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Level spacing distribution and spectral form factor}{21}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Krylov complexity}{21}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Results}{21}{subsubsection.3.2.3}%
-\contentsline {section}{\numberline {4}Conclusions}{21}{section.4}%
-\contentsline {section}{\numberline {A}Level Separation Distribution of the GOE Ensemble in $2\times 2$ case}{22}{appendix.A}%
-\contentsline {section}{\numberline {B}Hypergeometric Function}{22}{appendix.B}%
-\contentsline {section}{\numberline {C}Modulus of $Q_1$, $P_2$ and $Q_2$}{22}{appendix.C}%
+\contentsline {subsubsection}{\numberline {3.2.2}Krylov complexity}{25}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Results}{25}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {4}Conclusions}{25}{section.4}%
+\contentsline {section}{\numberline {A}Level Separation Distribution of the GOE Ensemble in $2\times 2$ case}{26}{appendix.A}%
+\contentsline {section}{\numberline {B}Hypergeometric Function}{26}{appendix.B}%
+\contentsline {section}{\numberline {C}Modulus of $Q_1$, $P_2$ and $Q_2$}{26}{appendix.C}%
